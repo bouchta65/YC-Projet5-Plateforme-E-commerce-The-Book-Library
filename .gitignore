@@ -1,0 +1,13 @@
+# Ignore CSS files
+css/about.css
+css/books.css
+css/cart.css
+css/contact.css
+css/favourit.css
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore package-lock.json and package.json (if needed)
+package-lock.json
+package.json
