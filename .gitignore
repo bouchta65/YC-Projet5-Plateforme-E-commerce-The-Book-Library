@@ -8,6 +8,9 @@ css/favourit.css
 # Ignore node_modules folder
 node_modules/
 
+# Ignore index page
+index.html
+
 # Ignore package-lock.json and package.json (if needed)
 package-lock.json
 package.json
