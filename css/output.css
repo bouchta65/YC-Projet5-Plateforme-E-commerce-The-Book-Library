@@ -639,6 +639,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[25VH\] {
+  height: 25VH;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -661,6 +665,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-full {
@@ -767,6 +775,22 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\.\.\/image\/aboutF\.png\)\] {
+  background-image: url(../image/aboutF.png);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-1 {
@@ -953,6 +977,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[50vh\] {
+    height: 50vh;
   }
 
   .md\:w-auto {
