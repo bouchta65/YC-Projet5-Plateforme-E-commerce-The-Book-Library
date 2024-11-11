@@ -2,14 +2,6 @@
 module.exports = {
   content: ["./pages/**/*.{html,js}"],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-module.exports = {
-  content: ["./pages/**/*.{html,js}"],
-  theme: {
     extend: {
       colors: {
         customYellow: '#F9F073',
@@ -20,4 +12,3 @@ module.exports = {
   },
   plugins: [],
 }
-
