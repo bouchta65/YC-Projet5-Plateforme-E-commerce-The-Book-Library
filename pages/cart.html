@@ -135,105 +135,148 @@
             </div>
         </div>
     </nav>
-    <section class="sm:w-11/12 m-auto text-xs sm:text-sm md:text-base font-semibold">
-        <div class="cart">
-            <!-- Cart header -->
-            <div
-                class="grid grid-cols-[50%,auto,auto,auto,3%] items-center bg-gray-200 p-2 gap-2 sm:gap-4 font-semibold text-gray-700">
-                <div>Book</div>
-                <div>Price</div>
-                <div>Quantity</div>
-                <div>Subtotal</div>
-                <div></div>
-            </div>
 
-            <!-- Book -->
-            <div
-                class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
-                <!-- cover and title -->
-                <div class="flex items-center gap-2">
-                    <img src="../images/cart images/cover1.jpg" alt="The Anxious Generation"
-                        class="w-12 h-16 object-contain">
-                    <span class="text-gray-800">The Anxious Generation</span>
-                </div>
-
-                <!-- prix -->
-                <div class="text-gray-700">$80.00</div>
-
-                <!-- quantity -->
-                <div class="">
-                    <input type="number" class="w-12 text-center border rounded" value="2" min="1">
-                </div>
-
-                <!-- subtotal -->
-                <div class="text-gray-700">$160.00</div>
-
-                <!-- delete icon -->
-                <div>
-                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
-                </div>
-            </div>
-
-            <!-- book 2 -->
-            <div
-                class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
-
-                <div class="flex items-center gap-2">
-                    <img src="../images/cart images/cover2.jpg" alt="Fahrenheit 451" class="w-12 h-16 object-contain">
-                    <span class="text-gray-800">Fahrenheit 451</span>
-                </div>
-
-                <div class="text-gray-700">$100.00</div>
-
-                <div class="">
-                    <input type="number" class="w-12 text-center border rounded" value="1" min="1">
-                </div>
-
-                <div class="text-gray-700">$100.00</div>
-
-                <div>
-                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
-                </div>
-            </div>
-
-            <!-- book 3 -->
-            <div
-                class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
-
-                <div class="flex items-center gap-2">
-                    <img src="../images/cart images/cover3.jpg" alt="The Body Keeps The Score"
-                        class="w-12 h-16 object-contain">
-                    <span class="text-gray-800">The Body Keeps The Score</span>
-                </div>
-
-                <div class="text-gray-700">$80.00</div>
-
-                <div class="">
-                    <input type="number" class="w-12 text-center border rounded" value="1" min="1">
-                </div>
-
-                <div class="text-gray-700">$80.00</div>
-
-                <div>
-                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
-                </div>
-            </div>
-
+    <div class="w-11/12 m-auto">
+        <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
+            <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
+            <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Favourite Books</h2>
         </div>
-        <!-- buttons -->
-        <div class="flex gap-5 justify-center items-center h-20">
-            <button class="bg-[#4B6587] text-white text-sm md:text-base md:p-2 font-semibold w-32 h-11 rounded-md">Empty
-                Cart</button>
+        <h1 class="text-xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">Your Favourite Books</h1>
+    </div>
+
+
+    <main class="sm:w-11/12 m-auto text-xs sm:text-sm md:text-base font-semibold grid lg:grid-cols-[60%,40%]">
+        <!-- section for card and buttons -->
+        <section>
+            <div class="cart">
+                <!-- Cart header -->
+
+                <div
+                    class="grid grid-cols-[50%,auto,auto,auto,3%] items-center bg-gray-200 p-2 gap-2 sm:gap-4 font-semibold text-gray-700">
+                    <div>Book</div>
+                    <div>Price</div>
+                    <div>Quantity</div>
+                    <div>Subtotal</div>
+                    <div></div>
+                </div>
+
+                <!-- Book -->
+                <div
+                    class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
+                    <!-- cover and title -->
+                    <div class="flex items-center gap-2">
+                        <img src="../images/cart images/cover1.jpg" alt="The Anxious Generation"
+                            class="w-12 h-16 object-contain">
+                        <span class="text-gray-800">The Anxious Generation</span>
+                    </div>
+
+                    <!-- prix -->
+                    <div class="text-gray-700">$80.00</div>
+
+                    <!-- quantity -->
+                    <div class="">
+                        <input type="number" class="w-12 text-center border rounded" value="2" min="1">
+                    </div>
+
+                    <!-- subtotal -->
+                    <div class="text-gray-700">$160.00</div>
+
+                    <!-- delete icon -->
+                    <div>
+                        <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                    </div>
+                </div>
+
+                <!-- book 2 -->
+                <div
+                    class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
+
+                    <div class="flex items-center gap-2">
+                        <img src="../images/cart images/cover2.jpg" alt="Fahrenheit 451"
+                            class="w-12 h-16 object-contain">
+                        <span class="text-gray-800">Fahrenheit 451</span>
+                    </div>
+
+                    <div class="text-gray-700">$100.00</div>
+
+                    <div class="">
+                        <input type="number" class="w-12 text-center border rounded" value="1" min="1">
+                    </div>
+
+                    <div class="text-gray-700">$100.00</div>
+
+                    <div>
+                        <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                    </div>
+                </div>
+
+                <!-- book 3 -->
+                <div
+                    class="grid grid-cols-[50%,auto,auto,auto,3%] items-center border-b p-2 gap-2 sm:gap-4 hover:bg-gray-100">
+
+                    <div class="flex items-center gap-2">
+                        <img src="../images/cart images/cover3.jpg" alt="The Body Keeps The Score"
+                            class="w-12 h-16 object-contain">
+                        <span class="text-gray-800">The Body Keeps The Score</span>
+                    </div>
+
+                    <div class="text-gray-700">$80.00</div>
+
+                    <div class="">
+                        <input type="number" class="w-12 text-center border rounded" value="1" min="1">
+                    </div>
+
+                    <div class="text-gray-700">$80.00</div>
+
+                    <div>
+                        <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <!-- buttons -->
+            <div class="flex gap-5 justify-center items-center h-28">
+                <button
+                    class="bg-[#4B6587] text-white text-sm md:text-base md:p-2 font-semibold w-32 h-11 rounded-md">Empty
+                    Cart</button>
+                <button
+                    class="bg-[#C44436] text-white text-sm md:text-base md:p-2 font-semibold w-32 h-11 rounded-md">Return
+                    To
+                    Shop</button>
+            </div>
+        </section>
+
+        <!-- section for cupon and total -->
+        <section class="flex flex-col gap-4 items-center">
+            <!--Cupon code-->
+            <div class="bg-gray-200 p-4 w-11/12 sm:w-3/4 md:w-3/5 lg:w-10/12 m-auto text-sm sm:text-base font-semibold">
+                <p class="text-black font-semibold mb-2">Use a coupon code to get a discount</p>
+                <div class="flex space-x-2">
+                    <input type="text" placeholder="Enter coupon code ..."
+                        class="p-2 border border-gray-300 rounded-md w-4/5">
+                    <button class="bg-[#C44436] text-white font-semibold w-1/5 sm:w-32 rounded-md">Apply</button>
+                </div>
+            </div>
+            
+            <!-- total adding -->
+            <p class="text-center text-3xl font-bold">Cart Totals</p>
+            <div
+                class="flex flex-col gap-4 bg-gray-200 px-8 py-5 w-11/12 sm:w-3/4 md:w-3/5 lg:w-10/12 m-auto text-base font-semibold">
+                <p class="flex justify-between">Subtotals <span>$780</span></p>
+                <p class="flex justify-between">Shipping <span>Free</span></p>
+                <p class="flex justify-between">Tax <span>$00.00</span></p>
+                <p class="flex justify-between">Discount <span>$00.00</span></p>
+                <div class="h-1 bg-black w-full"></div>
+                <p class="flex justify-between text-lg font-bold">TOTAL <span>$780.00</span></p>
+
+            </div>
             <button
-                class="bg-[#C44436] text-white text-sm md:text-base md:p-2 font-semibold w-32 h-11 rounded-md">Return To
-                Shop</button>
-        </div>
+                class="bg-[#C44436] text-white text-sm md:text-base md:p-2 font-semibold w-32 md:w-40 h-11 rounded-md">Check
+                Out
+            </button>
+        </section>
 
-
-    </section>
-
-
-
+    </main>
 
 
 
