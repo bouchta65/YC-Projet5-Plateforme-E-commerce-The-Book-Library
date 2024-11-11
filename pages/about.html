@@ -110,6 +110,104 @@
         </div>
       </nav>
 
+      <section class="sm:w-11/12 m-auto text-xs">
+        <div class="cart">
+            <!-- Cart header -->
+            <div
+                class="grid grid-cols-[50%,auto,auto,auto,5%] items-center bg-gray-200 p-2 font-semibold text-gray-700">
+                <div>Book</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Subtotal</div>
+                <div></div>
+            </div>
+
+            <!-- Book -->
+            <div class="grid grid-cols-[50%,auto,auto,auto,5%] items-center border-b p-2 hover:bg-gray-100">
+                <!-- cover and title -->
+                <div class="flex items-center gap-4">
+                    <img src="../images/cart images/cover1.jpg" alt="The Anxious Generation" class="w-12 h-16 object-contain">
+                    <span class="text-gray-800">The Anxious Generation</span>
+                </div>
+
+                <!-- prix -->
+                <div class="text-gray-700">$80.00</div>
+
+                <!-- quantity -->
+                <div class="">
+                    <input type="number" class="w-12 text-center border rounded" value="2" min="1">
+                </div>
+
+                <!-- subtotal -->
+                <div class="text-gray-700">$160.00</div>
+
+                <!-- delete icon -->
+                <div>
+                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                </div>
+            </div>
+
+            <!-- book 2 -->
+            <div class="grid grid-cols-[50%,auto,auto,auto,5%] items-center border-b p-2 hover:bg-gray-100">
+
+                <div class="flex items-center gap-4">
+                    <img src="../images/cart images/cover2.jpg" alt="Fahrenheit 451" class="w-12 h-16 object-contain">
+                    <span class="text-gray-800">Fahrenheit 451</span>
+                </div>
+
+                <div class="text-gray-700">$100.00</div>
+
+                <div class="">
+                    <input type="number" class="w-12 text-center border rounded" value="1" min="1">
+                </div>
+
+                <div class="text-gray-700">$100.00</div>
+
+                <div>
+                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                </div>
+            </div>
+
+            <!-- book 3 -->
+            <div class="grid grid-cols-[50%,auto,auto,auto,5%] items-center border-b p-2 hover:bg-gray-100">
+
+                <div class="flex items-center gap-4">
+                    <img src="../images/cart images/cover3.jpg" alt="The Body Keeps The Score" class="w-12 h-16 object-contain">
+                    <span class="text-gray-800">The Body Keeps The Score</span>
+                </div>
+
+                <div class="text-gray-700">$80.00</div>
+
+                <div class="">
+                    <input type="number" class="w-12 text-center border rounded" value="1" min="1">
+                </div>
+
+                <div class="text-gray-700">$80.00</div>
+
+                <div>
+                    <i class="fa-solid fa-trash" style="color: #ffc857;"></i>
+                </div>
+            </div>
+
+        </div>
+        <!-- buttons -->
+        <div class="flex gap-5 justify-center items-center h-20">
+            <button class="bg-[#4B6587] text-white text-sm font-semibold w-32 h-11 rounded-md">Empty Cart</button>
+            <button class="bg-[#C44436] text-white text-sm font-semibold w-32 h-11 rounded-md">Return To Shop</button>
+        </div>
+
+        <div class="bg-gray-200 p-4 rounded-md w-2/3 m-auto text-xs">
+            <p class="text-black font-semibold mb-2">Use a coupon code to get a discount</p>
+            <div class="flex space-x-2">
+              <input type="text" placeholder="Enter coupon code ..." class="p-2 flex-1 border border-gray-300 rounded-md">
+              <button class="bg-[#C44436] text-white font-semibold w-32 rounded-md">Apply</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
 
       <div  >
         <div class=" bg-[url(../image/aboutF.png)] bg-cover bg-no-repeat bg-center w-[100%] h-[25VH] md:h-[50vh] ">
