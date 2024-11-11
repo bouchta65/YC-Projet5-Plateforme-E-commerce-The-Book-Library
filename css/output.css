@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -639,6 +643,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[25VH\] {
+  height: 25VH;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -661,6 +669,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-full {
@@ -767,6 +779,27 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\.\.\/image\/aboutF\.png\)\] {
+  background-image: url(../image/aboutF.png);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-1 {
@@ -955,6 +988,10 @@ video {
     display: none;
   }
 
+  .md\:h-\[50vh\] {
+    height: 50vh;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1017,54 +1054,4 @@ video {
 
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:border-gray-700 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  }
-
-  .dark\:bg-gray-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-blue-400 {
-    --tw-text-opacity: 1;
-    color: rgb(96 165 250 / var(--tw-text-opacity));
-  }
-
-  .dark\:hover\:bg-gray-700:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  }
-
-  .dark\:hover\:text-white:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 768px) {
-  @media (prefers-color-scheme: dark) {
-    .md\:dark\:bg-gray-900 {
-      --tw-bg-opacity: 1;
-      background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-    }
-
-    .md\:dark\:text-customYellow {
-      --tw-text-opacity: 1;
-      color: rgb(249 240 115 / var(--tw-text-opacity));
-    }
-
-    .md\:dark\:hover\:bg-transparent:hover {
-      background-color: transparent;
-    }
-
-    .md\:dark\:hover\:text-customYellow:hover {
-      --tw-text-opacity: 1;
-      color: rgb(249 240 115 / var(--tw-text-opacity));
-    }
-  }
 }
