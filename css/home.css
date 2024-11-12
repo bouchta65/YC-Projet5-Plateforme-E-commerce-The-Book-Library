@@ -721,6 +721,10 @@ video {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-1\/5 {
   width: 20%;
 }
@@ -1043,6 +1047,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1069,6 +1078,21 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1319,6 +1343,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
   }
 
   .md\:grid-cols-3 {
