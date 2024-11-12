@@ -673,6 +673,14 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-\[5\%\] {
+  margin-bottom: 5%;
+}
+
+.mr-\[10\%\] {
+  margin-right: 10%;
+}
+
 .block {
   display: block;
 }
@@ -725,12 +733,12 @@ video {
   height: 100vh;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .h-20 {
   height: 5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-9 {
@@ -739,6 +747,14 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-\[25VH\] {
+  height: 25VH;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .w-1\/5 {
@@ -797,8 +813,20 @@ video {
   width: 85%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .-translate-y-1\/2 {
@@ -837,6 +865,10 @@ video {
   grid-template-columns: 35% 1fr;
 }
 
+.grid-cols-\[50\%\2c auto\2c auto\2c auto\2c 5\%\] {
+  grid-template-columns: 50% auto auto auto 5%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -851,6 +883,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1024,6 +1060,78 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\.\.\/image\/aboutF\.png\)\] {
+  background-image: url(../image/aboutF.png);
+}
+
+.bg-\[url\(\'FavAd1\.png\'\)\] {
+  background-image: url('FavAd1.png');
+}
+
+.bg-\[url\(\'\.png\'\)\] {
+  background-image: url('.png');
+}
+
+.bg-\[url\(\'\.\.\.png\'\)\] {
+  background-image: url('...png');
+}
+
+.bg-\[url\(\'\.\.\/ima\'\)\] {
+  background-image: url('../ima');
+}
+
+.bg-\[url\(\'\.\.\/images\/favorit\'\)\] {
+  background-image: url('../images/favorit');
+}
+
+.bg-\[url\(\'\.\.\/images\/favourit\'\)\] {
+  background-image: url('../images/favourit');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutit\'\)\] {
+  background-image: url('../images/favoutit');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\'\)\] {
+  background-image: url('../images/favoutite');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/fav\.a\'\)\] {
+  background-image: url('../images/favoutite/fav.a');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/favd\'\)\] {
+  background-image: url('../images/favoutite/favd');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/favad\'\)\] {
+  background-image: url('../images/favoutite/favad');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/favad1\'\)\] {
+  background-image: url('../images/favoutite/favad1');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/favad1\.p\'\)\] {
+  background-image: url('../images/favoutite/favad1.p');
+}
+
+.bg-\[url\(\'\.\.\/images\/favoutite\/favad1\.png\'\)\] {
+  background-image: url('../images/favoutite/favad1.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-contain {
@@ -1318,6 +1426,10 @@ video {
     height: 2.75rem;
   }
 
+  .sm\:h-52 {
+    height: 13rem;
+  }
+
   .sm\:w-11\/12 {
     width: 91.666667%;
   }
@@ -1340,6 +1452,10 @@ video {
 
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:bg-contain {
+    background-size: contain;
   }
 
   .sm\:text-3xl {
@@ -1402,6 +1518,14 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .md\:h-\[17rem\] {
+    height: 17rem;
   }
 
   .md\:w-3\/5 {
@@ -1506,6 +1630,10 @@ video {
     height: 2.25rem;
   }
 
+  .lg\:h-\[21rem\] {
+    height: 21rem;
+  }
+
   .lg\:w-10\/12 {
     width: 83.333333%;
   }
@@ -1563,6 +1691,10 @@ video {
     height: 2.75rem;
   }
 
+  .xl\:h-\[25rem\] {
+    height: 25rem;
+  }
+
   .xl\:w-10\/12 {
     width: 83.333333%;
   }
@@ -1576,6 +1708,16 @@ video {
          column-gap: 3.5rem;
   }
 
+  .xl\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1584,6 +1726,12 @@ video {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:h-\[25rem\] {
+    height: 25rem;
   }
 }
 
