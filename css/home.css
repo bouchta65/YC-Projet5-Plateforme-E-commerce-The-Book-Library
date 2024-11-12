@@ -633,13 +633,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
-<<<<<<< HEAD
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -668,13 +665,10 @@ video {
   margin-top: 1.5rem;
 }
 
-<<<<<<< HEAD
 .mt-8 {
   margin-top: 2rem;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .block {
   display: block;
 }
@@ -711,10 +705,6 @@ video {
   height: 7rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -725,26 +715,12 @@ video {
 
 .h-8 {
   height: 2rem;
-<<<<<<< HEAD
-=======
-}
-
-.h-\[25VH\] {
-  height: 25VH;
->>>>>>> 37bd5bd (css)
 }
 
 .h-screen {
   height: 100vh;
 }
 
-<<<<<<< HEAD
-.h-1 {
-  height: 0.25rem;
-}
-
-=======
->>>>>>> 37bd5bd (css)
 .w-1\/5 {
   width: 20%;
 }
@@ -761,13 +737,6 @@ video {
   width: 3rem;
 }
 
-<<<<<<< HEAD
-=======
-.w-2\/3 {
-  width: 66.666667%;
-}
-
->>>>>>> 37bd5bd (css)
 .w-20 {
   width: 5rem;
 }
@@ -828,7 +797,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-<<<<<<< HEAD
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -837,8 +805,6 @@ video {
   grid-template-columns: 50% auto auto auto 3%;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .flex-col {
   flex-direction: column;
 }
@@ -883,13 +849,10 @@ video {
   gap: 1.25rem;
 }
 
-<<<<<<< HEAD
 .gap-8 {
   gap: 2rem;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1018,25 +981,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-=======
-.bg-\[url\(\.\.\/image\/aboutF\.png\)\] {
-  background-image: url(../image/aboutF.png);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
->>>>>>> 37bd5bd (css)
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1099,18 +1043,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
-<<<<<<< HEAD
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .text-center {
   text-align: center;
 }
@@ -1125,37 +1061,16 @@ video {
   line-height: 1.25rem;
 }
 
-<<<<<<< HEAD
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
-<<<<<<< HEAD
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-=======
->>>>>>> 37bd5bd (css)
 .font-bold {
   font-weight: 700;
 }
@@ -1172,13 +1087,10 @@ video {
   line-height: 1;
 }
 
-<<<<<<< HEAD
 .leading-relaxed {
   line-height: 1.625;
 }
 
-=======
->>>>>>> 37bd5bd (css)
 .text-\[\#4B6587\] {
   --tw-text-opacity: 1;
   color: rgb(75 101 135 / var(--tw-text-opacity));
@@ -1401,30 +1313,16 @@ video {
     display: none;
   }
 
-<<<<<<< HEAD
-=======
-  .md\:h-\[50vh\] {
-    height: 50vh;
-  }
-
->>>>>>> 37bd5bd (css)
   .md\:w-3\/5 {
     width: 60%;
   }
 
   .md\:w-auto {
     width: auto;
-<<<<<<< HEAD
-  }
-
-  .md\:w-40 {
-    width: 10rem;
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-=======
->>>>>>> 37bd5bd (css)
   }
 
   .md\:flex-row {
