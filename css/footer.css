@@ -1,6 +1,0 @@
-@media (min-width: 600px) and (max-width:837px) {
-    footer .container {
-      grid-template-columns: repeat(3,1fr);
-      column-gap: 2rem;
-    }
-  }
