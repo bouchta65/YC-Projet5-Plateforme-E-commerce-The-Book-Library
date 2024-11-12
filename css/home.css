@@ -1142,6 +1142,10 @@ video {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/images\/favoutite\/favad1\.png\'\)\] {
+  background-image: url('../images/favoutite/favad1.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
