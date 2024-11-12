@@ -1151,6 +1151,11 @@ video {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
@@ -1227,6 +1232,14 @@ video {
   padding-top: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1276,6 +1289,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .leading-none {
@@ -1542,6 +1559,10 @@ video {
 
   .md\:h-\[17rem\] {
     height: 17rem;
+  }
+
+  .md\:max-h-\[60vh\] {
+    max-height: 60vh;
   }
 
   .md\:w-3\/5 {
