@@ -12,6 +12,11 @@
     <link rel="icon" href="../images/Home/FavIcone.png">
     <link href="../css/home.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <title>The Book Library - Your Online Bookstore</title>
 </head>
@@ -43,14 +48,10 @@
                </a>
             </button>
            
-    
-         
-         
-    
-            <!-- hada l menu -->
+            
             <div class="z-50 hidden fixed top-16 right-0 h-screen w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg  transition-all ease-in-out transform scale-95 opacity-0" id="menuShow">
                 <div class="px-8 py-3 text-gray-900 ">
-                    <!-- Header content like user's name or avatar -->
+                    
                     <button type="button" class="relative md:mr-3 hover:border hover:border-white hover:rounded-lg p-1 transition duration-200">
                         <img class="w-20 h-10" src="../images/Home/Logo-blue.png" alt="user photo">
                       </button>
@@ -58,7 +59,7 @@
                 <ul class="py-2">
                     <li>
                         <a href="home.html" class="flex items-center px-4 py-2 text-sm text-customblack hover:bg-blue-100 ">
-                            <i class="fas fa-home w-5 h-5 mr-3 mt-1 text-customblue "></i> <!-- Home Icon -->
+                            <i class="fas fa-home w-5 h-5 mr-3 mt-1 text-customblue "></i>
                             Home
                         </a>
                     </li>
@@ -104,67 +105,93 @@
             <li>
               <a href="contact.html" class="block py-2 px-3 text-white rounded  md:hover:text-customYellow md:p-0">Contact Us</a>
             </li>
-   
           </ul>
         </div>
         </div>
       </nav>
-      <footer class="bg-black text-white py-12">
-        <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
-          <!-- About Us -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">About Us</h2>
-            <p class="text-sm leading-relaxed text-custemgraytext">
-              We are passionate about books and committed to offering a wide selection for every taste. Whether you're into classic novels, thrillers, or personal development, we have the perfect book for you. Discover, explore, and be inspired!
-            </p>
-          </div>
-          <!-- Popular Links and Categories Combined -->
-          <div class="grid grid-cols-2 gap-8">
-            <!-- Popular Links -->
-            <div>
-              <h2 class="text-xl font-semibold mb-4">Popular Links</h2>
-              <ul class="space-y-2 text-sm text-custemgraytext">
-                <li><a href="home.html" class="hover:underline">Accueil</a></li>
-                <li><a href="books.html" class="hover:underline">Books</a></li>
-                <li><a href="about.html" class="hover:underline">About</a></li>
-                <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
-              </ul>
-            </div>
-            <!-- Categories -->
-            <div>
-              <h2 class="text-xl font-semibold mb-4">Categories</h2>
-              <ul class="space-y-2 text-sm text-custemgraytext">
-                <li><a href="#" class="hover:underline">Categories A</a></li>
-                <li><a href="#" class="hover:underline">Categories B</a></li>
-                <li><a href="#" class="hover:underline">Categories C</a></li>
-                <li><a href="#" class="hover:underline">Categories D</a></li>
-              </ul>
+      <main>
+        <section>
+          <div class="QuotesSection bg-cover  relative bg-no-repeat w-full min-h-[15rem] " style="background-image: url('../images/Books/Books.png');">
+            <div class="bg-yellow-200 w-[80%] p-3 absolute left-[10%] bottom-10 max-[425px]:bottom-1">
+                <q class="quote " style="font-family: 'Sour Gummy', sans-serif;">THE MORE THAT YOU READ, THE MORE THINGS YOU WILL KNOW.
+              THE MORE THAT YOU LEARN,THE MORE PLACES YOU'LL GO.</q>
+              <div class="flex justify-end"><hr class="w-5 border-0 h-[4px] mx-1 bg-black mt-2.5"><p class="quoteAuthor flex font-extralight" style="font-family: 'Sour Gummy', sans-serif;">Dr.Seuss, I Can Read With My Eyes Shut!</div>
             </div>
           </div>
-          <!-- Newsletter -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">Newsletter</h2>
-            <p class="text-sm mb-4 text-custemgraytext">Subscribe to our mailing list to receive daily updates direct to your inbox!</p>
-            <form class="flex">
-              <input type="email" placeholder="Email" class="p-2 text-black rounded-l-md focus:outline-none w-full" />
-              <button type="submit" class="bg-customblue text-white p-2 rounded-r-md hover:bg-customblue">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="container px-10 mx-auto mt-8 border-t border-gray-200  text-gray-500 pt-4 flex justify-between text-sm">
-          <p>Copyright © The Book Library | All rights reserved.</p>
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
-          </div>
-        </div>
-      </footer>
+        </section>
+        
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+      
     
+
+
+
    
 
-    
+<footer class="bg-black text-white py-12">
+  <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <!-- About Us -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">About Us</h2>
+      <p class="text-sm leading-relaxed text-custemgraytext">
+        We are passionate about books and committed to offering a wide selection for every taste. Whether you're into classic novels, thrillers, or personal development, we have the perfect book for you. Discover, explore, and be inspired!
+      </p>
+    </div>
+    <!-- Popular Links and Categories Combined -->
+    <div class="grid grid-cols-2 gap-8">
+      <!-- Popular Links -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Popular Links</h2>
+        <ul class="space-y-2 text-sm text-custemgraytext">
+          <li><a href="home.html" class="hover:underline">Accueil</a></li>
+          <li><a href="books.html" class="hover:underline">Books</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Categories -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Categories</h2>
+        <ul class="space-y-2 text-sm text-custemgraytext">
+          <li><a href="#" class="hover:underline">Categories A</a></li>
+          <li><a href="#" class="hover:underline">Categories B</a></li>
+          <li><a href="#" class="hover:underline">Categories C</a></li>
+          <li><a href="#" class="hover:underline">Categories D</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Newsletter -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Newsletter</h2>
+      <p class="text-sm mb-4 text-custemgraytext">Subscribe to our mailing list to receive daily updates direct to your inbox!</p>
+      <form class="flex">
+        <input type="email" placeholder="Email" class="p-2 text-black rounded-l-md focus:outline-none w-full" />
+        <button type="submit" class="bg-customblue text-white p-2 rounded-r-md hover:bg-customblue">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <!-- Footer Bottom -->
+  <div class="container px-10 mx-auto mt-8 border-t border-gray-200  text-gray-500 pt-4 flex justify-between text-sm">
+    <p>Copyright © The Book Library | All rights reserved.</p>
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
       
       <script src="../script/home.js"></script>
     </body>
