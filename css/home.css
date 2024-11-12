@@ -616,6 +616,10 @@ video {
   top: 4rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -725,14 +729,27 @@ video {
   height: 1.5rem;
 }
 
+<<<<<<< HEAD
 .h-8 {
   height: 2rem;
+=======
+.h-\[220px\] {
+  height: 220px;
+>>>>>>> 6aaa136ea854479d5dccea68b19b06f8364c2039
 }
 
 .h-screen {
   height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.h-20 {
+  height: 5rem;
+}
+
+>>>>>>> baa05d45aaf86e2ecb446d40daeaf09392c8de3e
 .h-1 {
   height: 0.25rem;
 }
@@ -763,6 +780,10 @@ video {
 
 .w-1\/5 {
   width: 20%;
+=======
+.h-\[65vh\] {
+  height: 65vh;
+>>>>>>> 6aaa136ea854479d5dccea68b19b06f8364c2039
 }
 
 .w-10 {
@@ -803,6 +824,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-full {
@@ -1074,6 +1099,7 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-\[url\(\.\.\/image\/aboutF\.png\)\] {
   background-image: url(../image/aboutF.png);
 }
@@ -1132,12 +1158,17 @@ video {
 
 .bg-\[url\(\'\.\.\/images\/favoutite\/favad1\.png\'\)\] {
   background-image: url('../images/favoutite/favad1.png');
+=======
+.bg-contain {
+  background-size: contain;
+>>>>>>> 6aaa136ea854479d5dccea68b19b06f8364c2039
 }
 
 .bg-cover {
   background-size: cover;
 }
 
+<<<<<<< HEAD
 .bg-center {
   background-position: center;
 }
@@ -1161,6 +1192,8 @@ video {
      object-fit: fill;
 }
 
+=======
+>>>>>>> 6aaa136ea854479d5dccea68b19b06f8364c2039
 .p-1 {
   padding: 0.25rem;
 }
@@ -1438,6 +1471,7 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+<<<<<<< HEAD
 @media (min-width: 640px) {
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
@@ -1510,6 +1544,22 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+=======
+@media not all and (min-width: 768px) {
+  .max-md\:h-\[255px\] {
+    height: 255px;
+  }
+
+  .max-md\:bg-contain {
+    background-size: contain;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:bg-contain {
+    background-size: contain;
+  }
+>>>>>>> 6aaa136ea854479d5dccea68b19b06f8364c2039
 }
 
 @media (min-width: 768px) {
