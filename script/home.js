@@ -69,9 +69,16 @@ const api = "https://file-json-test.vercel.app/fichier.json"
 async function booksAPI(){
     const respond = await fetch(api);
     const data = await respond.json()
-    console.log(data)
+    localStorage.setItem('booksData', JSON.stringify(data));
+    displayBooks()
+}
+
+
+function displayBooks(){
+    const data = JSON.parse(localStorage.getItem('booksData'))
     let table = "";
-    for(let i =0;i<4;i++){
+    
+        for(let i =0;i<data.length;i++){
         table =
         `      
          <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
@@ -143,10 +150,7 @@ async function booksAPI(){
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.add('hidden');
         });
-
-
-
-
     }
 }
+
 booksAPI()
