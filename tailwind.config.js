@@ -17,6 +17,7 @@ module.exports = {
         serif: ['Lora','Roboto'],
 
     },
+    '112.75': '28.188rem',
   },
   plugins: [],
 }}
