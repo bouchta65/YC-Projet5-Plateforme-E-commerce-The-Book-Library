@@ -10,8 +10,14 @@ module.exports = {
         customblaack : '#131313',
         custemgray: '#727272',
         custemgraytext : '#E2E6E9',
+        customblue: '#0C7FDA'
       },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Lora','Roboto'],
+
     },
+    '112.75': '28.188rem',
   },
   plugins: [],
-}
+}}
