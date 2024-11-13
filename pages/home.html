@@ -11,8 +11,10 @@
     <meta property="og:image" content="../images/Home/Logo.png">
     <link rel="icon" href="../images/Home/FavIcone.png">
     <link href="../css/home.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/top-books.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 
     <title>The Book Library - Your Online Bookstore</title>
 </head>
@@ -92,63 +94,163 @@
     </div>
   </div>
 </nav>
-
+<!-- section hero -->
 <section class="relative w-full">
     <img src="../images/Home/Création sans titre (4).png" alt="Hero Image" class="w-full object-contain">
 </section>
-<footer class="bg-black text-white py-12">
-    <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
-      <!-- About Us -->
-      <div>
-        <h2 class="text-xl font-semibold mb-4">About Us</h2>
-        <p class="text-sm leading-relaxed text-custemgraytext">
-          We are passionate about books and committed to offering a wide selection for every taste. Whether you're into classic novels, thrillers, or personal development, we have the perfect book for you. Discover, explore, and be inspired!
-        </p>
-      </div>
-      <!-- Popular Links and Categories Combined -->
-      <div class="grid grid-cols-2 gap-8">
-        <!-- Popular Links -->
-        <div>
-          <h2 class="text-xl font-semibold mb-4">Popular Links</h2>
-          <ul class="space-y-2 text-sm text-custemgraytext">
-            <li><a href="home.html" class="hover:underline">Accueil</a></li>
-            <li><a href="books.html" class="hover:underline">Books</a></li>
-            <li><a href="about.html" class="hover:underline">About</a></li>
-            <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
-          </ul>
-        </div>
-        <!-- Categories -->
-        <div>
-          <h2 class="text-xl font-semibold mb-4">Categories</h2>
-          <ul class="space-y-2 text-sm text-custemgraytext">
-            <li><a href="#" class="hover:underline">Categories A</a></li>
-            <li><a href="#" class="hover:underline">Categories B</a></li>
-            <li><a href="#" class="hover:underline">Categories C</a></li>
-            <li><a href="#" class="hover:underline">Categories D</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Newsletter -->
-      <div>
-        <h2 class="text-xl font-semibold mb-4">Newsletter</h2>
-        <p class="text-sm mb-4 text-custemgraytext">Subscribe to our mailing list to receive daily updates direct to your inbox!</p>
-        <form class="flex">
-          <input type="email" placeholder="Email" class="p-2 text-black rounded-l-md focus:outline-none w-full" />
-          <button type="submit" class="bg-customblue text-white p-2 rounded-r-md hover:bg-customblue">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <!-- Footer Bottom -->
-    <div class="container px-10 mx-auto mt-8 border-t border-gray-200  text-gray-500 pt-4 flex justify-between text-sm">
-      <p>Copyright © The Book Library | All rights reserved.</p>
-      <div class="flex space-x-4">
-        <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
-      </div>
-    </div>
-  </footer>
 
-<script src="../script/home.js"></script>
+
+<div class="w-11/12 m-auto">
+    <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
+        <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
+        <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Today’s</h2>
+    </div>
+    <div class="flex md:gap-20 gap-10">
+        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">Flash Sales</h1>
+       <div >
+
+    
+        <div class="flex md:gap-4 gap-2">
+            <h1 class=" " id="days">Days</h1>
+            <h1 class="" id="hours"> </h1>
+            <h1 class="" id="days">Hours</h1>
+            <h1 class="" id="minutes"> </h1>
+            <h1 class="" id="days" >Minutes</h1>
+            <h1 class="" id="seconds"> </h1>
+            <h1 class="" id="days">Seconds</h1>
+          </div>
+   
+      <div class="flex md:gap-4 gap-2">
+        <h1 class="text-2xl sm:text-3xl  font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="days">03</h1>
+        <h1 class="text-2xl sm:text-3xl text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">:</h1>
+        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="hours">23</h1>
+        <h1 class="text-2xl sm:text-3xl  text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" >:</h1>
+        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="minutes">19</h1>
+        <h1 class="text-2xl sm:text-3xl text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">:</h1>
+        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="seconds">56</h1>
+      </div>
+       </div> 
+    </div>
+</div>
+    
+<div class="flex justify-center">
+    <!-- Make the grid responsive with appropriate Tailwind breakpoints -->
+    <div class="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4" >
+        
+        <div id="book-element">
+            <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
+                <div class="w-[123px] h-[175px]">
+                    <img src=${data[i].img} alt="">
+                </div>
+                <div class="w-[55px] h-[30px] rounded flex justify-center absolute mb-48 mr-48 items-center" style="background-color: #4B6587;">
+                    <h1 class="text-white">-40%</h1>
+                </div>
+                <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center items-center absolute ml-52 mb-48">
+                    <button id="heartButton-${i}" class="text-black text-xl focus:outline-none">
+                        <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                    </button>
+                </div>
+                <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center mb-24 items-center absolute ml-52">
+                    <button id="eyeButton-${i}" class="text-gray-400 text-xl focus:outline-none">
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </button>
+                </div>
+                <div class="w-full h-[50px] bg-black flex justify-center mt-52 items-center absolute hidden" id="addcart-${i}">
+                    <button>
+                        <a href=""><h1 class="text-white font-bold text-xl">Add To Cart</h1></a>
+                    </button> 
+                </div>
+            </div>
+            <div class="mt-3">
+                <h1 class="font-bold">${data[i].title}</h1>
+                <div class="flex space-x-3">
+                    <h3 class="text-gray-500 font-bold">${data[i].price}$</h3>
+                    <h3 class="text-gray-500 font-bold line-through">${data[i].price+19.9}$</h3>
+                </div>
+                <div class="flex space-x-2 mt-1 relative">
+                   <div>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
+                   </div>
+                    <div><h1 class="absolute text-gray-500 font-bold ">(88)</h1></div>
+    
+                </div>
+                
+            </div>  
+        </div>
+        <div id="book-element1">
+            
+        </div>
+        <div id="book-element2"></div>
+        <div id="book-element3"></div>
+
+      
+    </div>
+</div>
+
+<div class="flex justify-center mt-9">
+    <button type="button" class="text-white bg-custembleumenu hover:bg-slate-400  font-bold rounded-md  px-5 py-2.5 text-center me-2 mb-2"><a href="books.html">View All Books</a></button>
+</div>
+
+
+
+
+<footer class="bg-black text-white py-12">
+  <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <!-- About Us -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">About Us</h2>
+      <p class="text-sm leading-relaxed text-custemgraytext">
+        We are passionate about books and committed to offering a wide selection for every taste. Whether you're into classic novels, thrillers, or personal development, we have the perfect book for you. Discover, explore, and be inspired!
+      </p>
+    </div>
+    <!-- Popular Links and Categories Combined -->
+    <div class="grid grid-cols-2 gap-8">
+      <!-- Popular Links -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Popular Links</h2>
+        <ul class="space-y-2 text-sm text-custemgraytext">
+          <li><a href="home.html" class="hover:underline">Accueil</a></li>
+          <li><a href="books.html" class="hover:underline">Books</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Categories -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Categories</h2>
+        <ul class="space-y-2 text-sm text-custemgraytext">
+          <li><a href="#" class="hover:underline">Categories A</a></li>
+          <li><a href="#" class="hover:underline">Categories B</a></li>
+          <li><a href="#" class="hover:underline">Categories C</a></li>
+          <li><a href="#" class="hover:underline">Categories D</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Newsletter -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Newsletter</h2>
+      <p class="text-sm mb-4 text-custemgraytext">Subscribe to our mailing list to receive daily updates direct to your inbox!</p>
+      <form class="flex">
+        <input type="email" placeholder="Email" class="p-2 text-black rounded-l-md focus:outline-none w-full" />
+        <button type="submit" class="bg-customblue text-white p-2 rounded-r-md hover:bg-customblue">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <!-- Footer Bottom -->
+  <div class="container px-10 mx-auto mt-8 border-t border-gray-200  text-gray-500 pt-4 flex justify-between text-sm">
+    <p>Copyright © The Book Library | All rights reserved.</p>
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../script/home.js"></script>
 </body>
 </html>
