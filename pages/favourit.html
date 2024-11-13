@@ -15,6 +15,7 @@
   <meta property="og:image" content="../images/Home/Logo.png">
   <link rel="icon" href="../images/Home/FavIcone.png">
   <link href="../css/home.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/favourite.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <title>The Book Library - Your Online Bookstore</title>
@@ -126,149 +127,152 @@
     </div>
   </nav>
 
-  <img src="../images/Favoutite/favourite.png" alt="header" class="w-full object-fill">
-  <div class="w-11/12 m-auto">
-    <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
-      <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
-      <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Favourite Books</h2>
+  <main>
+    <img src="../images/Favoutite/favourite.png" alt="header" class="w-full object-fill">
+    <div class="w-11/12 m-auto">
+      <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
+        <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
+        <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Favourite Books</h2>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">Your Favourite Books</h1>
     </div>
-    <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">Your Favourite Books</h1>
-  </div>
-
-  <section
-    class=" w-full sm:w-4/5 md:w-3/4 lg:w-11/12 xl:w-10/12 grid lg:grid-cols-2 gap-y-8 lg:gap-x-8 xl:gap-x-14  px-5 m-auto">
-    <!-- book 1 -->
-    <div class="grid grid-cols-[35%,1fr] border border-[#4B6587] border-solid p-2">
-      <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation"
-        class="w-[85%] sm:w-4/5 h-auto object-contain">
-      <div class="flex flex-col justify-between font-semibold text-base sm:text-lg md:text-2xlg lg:text-lg xl:text-xl">
-        <p>The Anxious Generation</p>
-        <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
-        <p>Categroy</p>
-        <p>$120.00</p>
-        <div class="flex justify-between">
-          <button
-            class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-            to Cart</button>
-          <button
-            class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+  
+    <section
+      class=" w-full sm:w-4/5 md:w-3/4 lg:w-11/12 xl:w-10/12 grid lg:grid-cols-2 gap-y-8 lg:gap-x-8 xl:gap-x-14 px-3 sm:px-5 m-auto text-base sm:text-lg md:text-2xlg lg:text-lg xl:text-xl">
+      <!-- book 1 -->
+      <div class="grid grid-cols-[35%,1fr] p-2 sm:p-4 min-h-44 rounded-md md:rounded-lg fav-book">
+        <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation"
+          class="w-[85%] sm:w-4/5 h-auto object-contain">
+        <div class="flex flex-col justify-between font-semibold">
+          <p>The Anxious Generation</p>
+          <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
+          <p>Categroy</p>
+          <p class="text-[#C44436]">$120.00</p>
+          <div class="flex justify-between">
+            <button
+              class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+              to Cart</button>
+            <button
+              class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- book2 -->
-    <div class="grid grid-cols-[35%,1fr] border border-[#4B6587] border-solid p-2">
-      <img src="../images/Favoutite/cover2.jpg" alt="The Anxious Generation"
-        class="w-[85%] sm:w-4/5 h-auto object-contain">
-      <div class="flex flex-col justify-between font-semibold text-base sm:text-lg md:text-2xlg lg:text-lg xl:text-xl">
-        <p>The Anxious Generation</p>
-        <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
-        <p>Categroy</p>
-        <p>$120.00</p>
-        <div class="flex justify-between">
-          <button
-            class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-            to Cart</button>
-          <button
-            class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+      <!-- book2 -->
+      <div class="grid grid-cols-[35%,1fr] p-2 sm:p-4 min-h-44 rounded-md md:rounded-lg fav-book">
+        <img src="../images/Favoutite/cover2.jpg" alt="The Anxious Generation"
+          class="w-[85%] sm:w-4/5 h-auto object-contain">
+        <div class="flex flex-col justify-between font-semibold">
+          <p>The Anxious Generation</p>
+          <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
+          <p>Categroy</p>
+          <p class="text-[#C44436]">$120.00</p>
+          <div class="flex justify-between">
+            <button
+              class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+              to Cart</button>
+            <button
+              class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- book 1 -->
-    <div class="grid grid-cols-[35%,1fr] border border-[#4B6587] border-solid p-2">
-      <img src="../images/Favoutite/cover3.jpg" alt="The Anxious Generation"
-        class="w-[85%] sm:w-4/5 h-auto object-contain">
-      <div class="flex flex-col justify-between font-semibold text-base sm:text-lg md:text-2xlg lg:text-lg xl:text-xl">
-        <p>The Anxious Generation</p>
-        <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
-        <p>Categroy</p>
-        <p>$120.00</p>
-        <div class="flex justify-between">
-          <button
-            class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-            to Cart</button>
-          <button
-            class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+  
+      <!-- book 1 -->
+      <div class="grid grid-cols-[35%,1fr] p-2 sm:p-4 min-h-44 rounded-md md:rounded-lg fav-book">
+        <img src="../images/Favoutite/cover3.jpg" alt="The Anxious Generation"
+          class="w-[85%] sm:w-4/5 h-auto object-contain">
+        <div class="flex flex-col justify-between font-semibold">
+          <p>The Anxious Generation</p>
+          <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
+          <p>Categroy</p>
+          <p class="text-[#C44436]">$120.00</p>
+          <div class="flex justify-between">
+            <button
+              class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+              to Cart</button>
+            <button
+              class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- book2 -->
-    <div class="grid grid-cols-[35%,1fr] border border-[#4B6587] border-solid p-2">
-      <img src="../images/Favoutite/cover4.jpg" alt="The Anxious Generation"
-        class="w-[85%] sm:w-4/5 h-auto object-contain">
-      <div class="flex flex-col justify-between font-semibold text-base sm:text-lg md:text-2xlg lg:text-lg xl:text-xl">
-        <p>The Anxious Generation</p>
-        <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
-        <p>Categroy</p>
-        <p>$120.00</p>
-        <div class="flex justify-between">
-          <button
-            class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-            to Cart</button>
-          <button
-            class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+      <!-- book2 -->
+      <div class="grid grid-cols-[35%,1fr] p-2 sm:p-4 min-h-44 rounded-md md:rounded-lg fav-book">
+        <img src="../images/Favoutite/cover4.jpg" alt="The Anxious Generation"
+          class="w-[85%] sm:w-4/5 h-auto object-contain">
+        <div class="flex flex-col justify-between font-semibold">
+          <p>The Anxious Generation</p>
+          <p>by <span class="font-bold text-[#4B6587]">Kristin Hannah</span></p>
+          <p>Categroy</p>
+          <p class="text-[#C44436]">$120.00</p>
+          <div class="flex justify-between">
+            <button
+              class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+              to Cart</button>
+            <button
+              class="bg-[#C44436] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-2/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Remove</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ad section -->
-
-  <section style="background-image: url(../images/Favoutite/favad1.png);"
-    class="h-44 sm:h-52 md:h-[17rem] lg:h-[21rem] xl:h-[25rem] 2xl:h-[25rem] w-full bg-cover sm:bg-contain bg-no-repeat bg-center sm:mt-8 md:mt-10 flex items-end justify-end ">
-    <button
-      class="bg-black text-white text-xs sm:text-lg font-semibold py-2 px-3 xl:py-3 xl:px-9 rounded-full mr-[10%] mb-[5%]">
-      SHOP NOW
-    </button>
-  </section>
-
-   <!-- other section -->
-  <div class="w-11/12 m-auto">
-    <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
+    </section>
+  
+    <!-- ad section -->
+  
+    <section style="background-image: url(../images/Favoutite/favad1.png);"
+      class="h-44 sm:h-52 md:h-[17rem] lg:h-[21rem] xl:h-[25rem] 2xl:h-[25rem] w-full bg-cover sm:bg-contain bg-no-repeat bg-center mt-6 sm:mt-8 md:mt-10 flex items-end justify-end ">
+      <button
+        class="bg-black text-white text-xs sm:text-lg font-semibold py-2 px-3 xl:py-3 xl:px-9 rounded-full mr-[10%] mb-[5%]">
+        SHOP NOW
+      </button>
+    </section>
+  
+    <!-- other section -->
+    <div class="w-11/12 m-auto">
+      <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
         <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
         <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Other Books</h2>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-bold mt-3">Other Books For You</h1>
     </div>
-    <h1 class="text-2xl sm:text-3xl font-bold mt-3">Other Books For You</h1>
-</div>
-
-<section class="w-11/12 sm:w-5/6 md:w-11/12 grid grid-cols-2 md:grid-cols-4 mx-auto gap-y-0 text-center">
-    <div class="flex flex-col gap-4 items-center justify-center">
+  
+    <section class="w-11/12 sm:w-5/6 md:w-11/12 grid grid-cols-2 md:grid-cols-4 mx-auto gap-y-0 text-center">
+      <div class="flex flex-col gap-4 items-center justify-center">
         <img src="../images/Favoutite/cover1.jpg" alt="The Lean Startup" class="max-w-3/5 max-h-[50%] sm:mx-h-[80%]">
         <p class="font-semibold">The Lean Startup</p>
         <p>Eric Ries</p>
         <button
-        class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-        to Cart</button>
-    </div>
-
-    <div class="flex flex-col gap-4 items-center justify-center">
+          class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+          to Cart</button>
+      </div>
+  
+      <div class="flex flex-col gap-4 items-center justify-center">
         <img src="../images/Favoutite/cover2.jpg" alt="The Lean Startup" class=" max-h-[50%]">
         <p class="font-semibold">The Lean Startup</p>
         <p>Eric Ries</p>
         <button
-        class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-        to Cart</button>
-    </div>
-
-    <div class="flex flex-col gap-4 items-center justify-center">
+          class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+          to Cart</button>
+      </div>
+  
+      <div class="flex flex-col gap-4 items-center justify-center">
         <img src="../images/Favoutite/cover3.jpg" alt="The Lean Startup" class="max-w-3/5 max-h-[50%]">
         <p class="font-semibold">The Lean Startup</p>
         <p>Eric Ries</p>
         <button
-        class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-        to Cart</button>
-    </div>
-
-    <div class="flex flex-col gap-4 items-center justify-center">
+          class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+          to Cart</button>
+      </div>
+  
+      <div class="flex flex-col gap-4 items-center justify-center">
         <img src="../images/Favoutite/cover4.jpg" alt="The Lean Startup" class="max-w-3/5 max-h-[50%]">
         <p class="font-semibold">The Lean Startup</p>
         <p>Eric Ries</p>
         <button
-        class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
-        to Cart</button>
-    </div>
-
-</section>
+          class="bg-[#4B6587] text-white text-xs sm:text-base lg:text-sm xl:text-base md:p-2 lg:p-0 font-semibold w-3/5 lg:w-[45%] xl:w-2/5 h-9 sm:h-11 lg:h-9 xl:h-11 rounded-md">Add
+          to Cart</button>
+      </div>
+  
+    </section>
+  </main>
+  
 
   <footer class="bg-black text-white py-12">
     <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -326,6 +330,7 @@
     </div>
   </footer>
   <script  src="../script/home.js"></script>
+
 </body>
 
 </html>
