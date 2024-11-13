@@ -766,6 +766,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -788,10 +792,6 @@ video {
 
 .mt-9{
   margin-top: 2.25rem;
-}
-
-.mt-40{
-  margin-top: 10rem;
 }
 
 .block{
@@ -1899,10 +1899,6 @@ video {
     margin-top: 2rem;
   }
 
-  .sm\:mt-40{
-    margin-top: 10rem;
-  }
-
   .sm\:h-10{
     height: 2.5rem;
   }
@@ -2025,14 +2021,6 @@ video {
 
   .md\:mt-10{
     margin-top: 2.5rem;
-  }
-
-  .md\:mt-40{
-    margin-top: 10rem;
-  }
-
-  .md\:mt-20{
-    margin-top: 5rem;
   }
 
   .md\:flex{
@@ -2164,12 +2152,12 @@ video {
     padding: 0.5rem;
   }
 
-  .md\:p-8{
-    padding: 2rem;
-  }
-
   .md\:p-4{
     padding: 1rem;
+  }
+
+  .md\:p-8{
+    padding: 2rem;
   }
 
   .md\:px-10{
@@ -2180,11 +2168,6 @@ video {
   .md\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:pl-12{
