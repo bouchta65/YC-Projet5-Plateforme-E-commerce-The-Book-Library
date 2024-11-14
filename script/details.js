@@ -137,7 +137,7 @@ buyNow.addEventListener('click', () => {
   
 });
                                                    
-
+const detailbook = JSON.parse(localStorage.getItem('detailbook'));
 title.innerText=data[5].title;
 kingImg.src=data[5].img;
 kingImg.alt="image de la couverture de le livre )";
