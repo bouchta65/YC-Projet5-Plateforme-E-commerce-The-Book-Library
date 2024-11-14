@@ -55,12 +55,15 @@ sorting.onchange = function(){
 
 }
 
-filterByLang.onchange = filterBooks(filterByLang.value)
-filterByGenre.onchange = filterBooks(filterByGenre.value)
+filterByLang.onchange= function (){filterBooks(filterByLang.value);}
+filterByGenre.onchange = function (){ filterBooks(filterByGenre.value);}
+
 function filterBooks(value) {
 
     let filteredData = [];
-    for (let book of booksData) {   
+    for (let book of booksData) { 
+        console.log(book);
+          
         if(book.language === value ){filteredData.push(book)}
     }
     displayBooks(filteredData);
