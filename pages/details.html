@@ -146,7 +146,7 @@
             </div>
 
             <!-- container principale des informations -->
-            <div class="info-hero flex  flex-col mx-6  mx-2 md:flex-col  min-h-[300px] gap-4 ">
+            <div class="info-hero flex  flex-col   mx-2 md:flex-col  min-h-[300px] gap-4 ">
 
 
                
@@ -156,7 +156,7 @@
                   <!-- titre -->
                 <div class="star flex flex-col ">
                     <div>
-                        <h2 class="text-3xl font-semibold font-serif">La Terre Des Héros (1:Héritage)</h2>
+                        <h2 id="title" class="text-3xl font-semibold font-serif">La Terre Des Héros (1:Héritage)</h2>
                     </div>
 
                     <!-- etoile -->
@@ -166,7 +166,7 @@
                         <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
                         <span> <i class="fa-solid fa-star" style="color: #a1a1a1;"></i></span>
                          <!-- prix -->
-                        <pre > (150 reviews ) | <span class="font-bold text-2xl">$192.00</span> | <span class="text-bold text-2xl ">0</span></pre>
+                        <pre  > (150 reviews ) | <span class="font-bold text-2xl">$192.00</span> | <span  id="stock" class="text-bold text-2xl ">0</span></pre>
                     </div>
                    
                 </div>
@@ -187,13 +187,13 @@
                         <!-- button de quantite -->
                         <div class="border-2 border-solid border-black  h-[46px] flex  rounded-md">
                             <button id="moins" class=" w-[30px] h-[40px] md:w-[40px] md:h-[44px] text-black ">-</button>
-                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black "></button>
+                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black ">${count}</button>
                             <button id="plus" class="w-[30px] h-[43px] md:w-[40px]  text-white text-center  bg-red-500 ">+</button>
                         </div>
 
                         <!-- button de buy now -->
                         <div class="h-[45px] md:w-[165px] w-[120px] bg-red-500 border-1 border-solid border-black  text-center content center items-center rounded-md">
-                            <button class="rounded-sm text-center text-white h-[45px] md:w-[165px] w-[120px] ">Buy Now</button>
+                            <button id="buyNow" class="rounded-sm text-center text-white h-[45px] md:w-[165px] w-[120px] ">Buy Now</button>
                         </div>
 
                         <div>

@@ -1,12 +1,12 @@
 let data = []
 
-function displayBooks(){
+function displayBooks() {
     let table = "";
     data = JSON.parse(localStorage.getItem('booksData'));
 
-        for(let i =0;i<data.length;i++){
+    for (let i = 0; i < data.length; i++) {
         table =
-        `      
+            `      
          <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
             <div class="w-[123px] h-[175px]">
                 <img src=${data[i].img} alt="">
@@ -34,7 +34,7 @@ function displayBooks(){
             <h1 class="font-bold">${data[i].title}</h1>
             <div class="flex space-x-3">
                 <h3 class="text-gray-500 font-bold">${data[i].price}$</h3>
-                <h3 class="text-gray-500 font-bold line-through">${data[i].price+19.9}$</h3>
+                <h3 class="text-gray-500 font-bold line-through">${data[i].price + 19.9}$</h3>
             </div>
             <div class="flex space-x-2 mt-1 relative">
                <div>
@@ -50,14 +50,14 @@ function displayBooks(){
             
         </div>   
     `
-        if(i==0){
+        if (i == 0) {
             document.querySelector("#book-element").innerHTML = table;
 
-        }else if(i==1){
+        } else if (i == 1) {
             document.querySelector("#book-element1").innerHTML = table;
-        }else if (i==2){
+        } else if (i == 2) {
             document.querySelector("#book-element2").innerHTML = table;
-        }else{
+        } else {
             document.querySelector("#book-element3").innerHTML = table;
         }
 
@@ -66,12 +66,12 @@ function displayBooks(){
             const heartIcon = document.querySelector(`#heartButton-${i}`);
             heartIcon.innerHTML = '<i class="fa-solid fa-heart" style="color: red;"></i>';
         });
-        
+
         document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.remove('hidden');
         });
-        
+
         document.querySelector(`#box-book-${i}`).addEventListener('mouseleave', () => {
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.add('hidden');
@@ -86,26 +86,51 @@ displayBooks()
 
 
 
+let stockage;
+
+let heartPair = document.getElementById("heartButton");
+let heart = document.getElementById('heart');
+
+heart.addEventListener("click", () => {
+    if (heart) {
+        heart.parentElement.innerHTML = `<i class="fa-solid fa-heart fa-2x fa-2x" style="color: red;"></i>`;
+
+        //    heart.innerHTML ='<i class="fa-solid fa-heart" style="color: red;"></i>';
+    }
+    // else if(heart =='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: #000000;></i>'){
+    //     heart=='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: red;"></i>'  
+
+})
+
+let count =0;
+const moins = document.getElementById("moins");
+const plus = document.getElementById("plus");
+const countour = document.getElementById("countour");
+const buyNow = document.getElementById("buyNow");
+const stock=document.getElementById("stock");
+console.log(stock);
 
 
-// let heartPair=document.getElementById("heartButton");
-// let heart = document.getElementById('heart');
+plus.addEventListener('click', () => {
+    countour.innerText = count++;
+});
 
-// heart.addEventListener("click",()=>{
-//     if(heart){
-//        heart.parentElement.innerHTML = `<i class="fa-solid fa-heart fa-2x fa-2x" style="color: red;"></i>`;
-        
-// //    heart.innerHTML ='<i class="fa-solid fa-heart" style="color: red;"></i>';
-//  }
-// // else if(heart =='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: #000000;></i>'){
-// //     heart=='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: red;"></i>'  
+moins.addEventListener('click', () => {
+    if (count >= 0) {
+        countour.innerText = count--;
+    }
+});
 
-// })
+buyNow.addEventListener('click', () => {
+  let titre=document.getElementById("title").innerText;
+  titre='The Little Prince';
+  const index = data.findIndex((element) => element.title === titre);
+  if(count != 0){
+  data[index].stock-=count;
+  stock.innerText=data[index].stock;
+  count=0;
+  countour.innerText = count;
+}
+  
+});
 
-// let count=1;
-// const moins=getElementById("moins");
-// const plus=getElementById("plus");
-// const countour=getElementById("countour");
-// let span=document.createElement("span");
-// countour.append(span);
-// span.innerText=count;
