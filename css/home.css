@@ -1199,6 +1199,10 @@ video {
   grid-template-columns: 50% auto auto auto 3%;
 }
 
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
