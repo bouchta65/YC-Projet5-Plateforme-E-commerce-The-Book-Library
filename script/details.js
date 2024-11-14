@@ -84,7 +84,7 @@ displayBooks()
 
 
 
-
+let detailbook1 = JSON.parse(localStorage.getItem('detailbook')) || [];
 
 let stockage;
 
