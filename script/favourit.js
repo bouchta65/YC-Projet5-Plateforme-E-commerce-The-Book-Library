@@ -8,7 +8,7 @@ let booksData = [];
 let favData = [];
 document.addEventListener("DOMContentLoaded", () => {
     booksData = JSON.parse(localStorage.getItem('booksData'));
-    favData = JSON.parse(localStorage.getItem('favourite'));
+    favData = JSON.parse(localStorage.getItem('favourite')) || [];
     console.log(booksData);
     console.log(favData);
     displayFavBooks();
@@ -41,6 +41,11 @@ function displayFavBooks() {
         const removeButton = newBook.querySelector('.remove-fav-btn');
         removeButton.addEventListener('click', () => {
             newBook.remove();
+            const bookIndex = favData.findIndex(favBook => favBook.title === book.title);
+            if (bookIndex !== -1) {
+                favData.splice(bookIndex, 1); 
+                localStorage.setItem('favourite', JSON.stringify(favData));
+            }
         });
     });
 
