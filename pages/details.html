@@ -15,7 +15,7 @@
     <meta property="og:image" content="../images/Home/Logo.png">
     <link rel="icon" href="../images/Home/FavIcone.png">
     <link href="../css/home.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../css/top-books.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <title>The Book Library - Your Online Bookstore</title>
@@ -187,7 +187,7 @@
                         <!-- button de quantite -->
                         <div class="border-2 border-solid border-black  h-[46px] flex  rounded-md">
                             <button id="moins" class=" w-[30px] h-[40px] md:w-[40px] md:h-[44px] text-black ">-</button>
-                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black ">0</button>
+                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black "></button>
                             <button id="plus" class="w-[30px] h-[43px] md:w-[40px]  text-white text-center  bg-red-500 ">+</button>
                         </div>
 
@@ -245,43 +245,16 @@
     </section>
    
    
-<div class="w-11/12 m-auto">
-    <div class="flex items-end gap-3 mt-6 sm:mt-8 md:mt-10 lg:mt-14">
-        <div class="w-4 h-8 sm:w-5 sm:h-10 bg-[#4B6587] rounded"></div>
-        <h2 class="text-[#4B6587] font-medium text-sm sm:text-lg">Today’s</h2>
-    </div>
-    <div class="flex md:gap-20 gap-10">
-        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">suggesions</h1>
-       <div >
+
 
     
-        <div class="flex md:gap-4 gap-2">
-            <h1 class=" " id="days">Days</h1>
-            <h1 class="" id="hours"> </h1>
-            <h1 class="" id="days">Hours</h1>
-            <h1 class="" id="minutes"> </h1>
-            <h1 class="" id="days" >Minutes</h1>
-            <h1 class="" id="seconds"> </h1>
-            <h1 class="" id="days">Seconds</h1>
-          </div>
-   
-      <div class="flex md:gap-4 gap-2">
-        <h1 class="text-2xl sm:text-3xl  font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="days">03</h1>
-        <h1 class="text-2xl sm:text-3xl text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">:</h1>
-        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="hours">23</h1>
-        <h1 class="text-2xl sm:text-3xl  text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" >:</h1>
-        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="minutes">19</h1>
-        <h1 class="text-2xl sm:text-3xl text-orange-500 mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16">:</h1>
-        <h1 class="text-2xl sm:text-3xl font-bold mt-3 mb-8 sm:mb-10 md:mb-12 lg:mb-16" id="seconds">56</h1>
-      </div>
-       </div> 
-    </div>
-</div>
-    
 <div class="flex justify-center">
+
+   
+
     <!-- Make the grid responsive with appropriate Tailwind breakpoints -->
     <div class="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4" >
-        
+       
         <div id="book-element">
             <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
                 <div class="w-[123px] h-[175px]">
@@ -401,7 +374,6 @@
     </footer>
 
     <script src="../script/details.js"></script>
-    <script src="../script/home.js"></script>
 </body>
 
 </html>
