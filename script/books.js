@@ -54,3 +54,14 @@ sorting.onchange = function(){
     }
 
 }
+
+filterByLang.onchange = filterBooks(filterByLang.value)
+filterByGenre.onchange = filterBooks(filterByGenre.value)
+function filterBooks(value) {
+
+    let filteredData = [];
+    for (let book of booksData) {   
+        if(book.language === value ){filteredData.push(book)}
+    }
+    displayBooks(filteredData);
+    }
