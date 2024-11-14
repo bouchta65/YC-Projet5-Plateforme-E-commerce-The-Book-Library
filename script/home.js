@@ -80,6 +80,7 @@ let favourite = JSON.parse(localStorage.getItem('favourite')) || [];
 
 
 
+<<<<<<< HEAD
 
 function displayBooks(){
 
@@ -136,6 +137,18 @@ for(let i = 0 ; i<data.length;i++){
 
 
 function showdata(){
+=======
+async function booksAPI(){
+    const respond = await fetch(api);
+    const data = await respond.json()
+    localStorage.setItem('booksData', JSON.stringify(data));
+    displayBooks()
+}
+
+
+function displayBooks(){
+    const data = JSON.parse(localStorage.getItem('booksData'))
+>>>>>>> e41c8b0 (Stocker les donné fetché a localstorage)
     let table = "";
     
         for(let i =0;i<data.length;i++){
@@ -194,4 +207,27 @@ function showdata(){
         }else if (i==3){
             document.querySelector("#book-element3").innerHTML = table;
         }
+<<<<<<< HEAD
 }}
+=======
+
+
+        document.querySelector(`#heartButton-${i}`).addEventListener('click', () => {
+            const heartIcon = document.querySelector(`#heartButton-${i}`);
+            heartIcon.innerHTML = '<i class="fa-solid fa-heart" style="color: red;"></i>';
+        });
+        
+        document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
+            const addcart = document.querySelector(`#addcart-${i}`);
+            addcart.classList.remove('hidden');
+        });
+        
+        document.querySelector(`#box-book-${i}`).addEventListener('mouseleave', () => {
+            const addcart = document.querySelector(`#addcart-${i}`);
+            addcart.classList.add('hidden');
+        });
+    }
+}
+
+booksAPI()
+>>>>>>> e41c8b0 (Stocker les donné fetché a localstorage)
