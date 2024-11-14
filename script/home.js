@@ -124,7 +124,7 @@ for(let i = 0 ; i<data.length;i++){
                 localStorage.setItem('detailbook', JSON.stringify(detailbook));
                 window.location.href = 'details.html';
             })
-            }
+          
 
         
             document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
@@ -144,7 +144,7 @@ for(let i = 0 ; i<data.length;i++){
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.add('hidden');
         });
-    }
+    }  }
 
 
 
