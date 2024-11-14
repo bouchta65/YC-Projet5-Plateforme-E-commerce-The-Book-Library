@@ -108,7 +108,10 @@ const plus = document.getElementById("plus");
 const countour = document.getElementById("countour");
 const buyNow = document.getElementById("buyNow");
 const stock=document.getElementById("stock");
-console.log(stock);
+const descreption=document.getElementById("descreption");
+const price=document.getElementById("price")
+
+
 
 
 plus.addEventListener('click', () => {
@@ -126,11 +129,18 @@ buyNow.addEventListener('click', () => {
   titre='The Little Prince';
   const index = data.findIndex((element) => element.title === titre);
   if(count != 0){
-  data[index].stock-=count;
+  data[index].stock= data[index].stock-count;
   stock.innerText=data[index].stock;
   count=0;
   countour.innerText = count;
 }
   
 });
+                                                   
 
+title.innerText=data[5].title;
+kingImg.src=data[5].img;
+kingImg.alt="image de la couverture de le livre )";
+descreption.innerText=data[5].description;
+price.innerText=data[5].price + " $";
+stock.innerText=data[5].stock;
