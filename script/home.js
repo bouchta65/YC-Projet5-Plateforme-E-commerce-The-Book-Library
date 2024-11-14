@@ -19,6 +19,7 @@ window.onload = function() {
     booksAPI()
     showdata()
     displayBooks()
+    
 };
 
 // // function timeHome(days,hours,minutes,seconds){
@@ -76,6 +77,7 @@ window.onload = function() {
 
 
 let favourite = JSON.parse(localStorage.getItem('favourite')) || [];
+let card = JSON.parse(localStorage.getItem('card')) || [];
 
 
 
@@ -116,20 +118,33 @@ for(let i = 0 ; i<data.length;i++){
 
                 localStorage.setItem('favourite', JSON.stringify(favourite));
             });
+            
+            document.querySelector(`#eyeButton-${i}`).addEventListener('click', () => {
+                let detailbook = [data[i]]
+                localStorage.setItem('detailbook', JSON.stringify(detailbook));
+            })
+            }
+
         
-        
-        
-        document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
-            const addcart = document.querySelector(`#addcart-${i}`);
-            addcart.classList.remove('hidden');
-        });
-        
+            document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
+                const addcart = document.querySelector(`#addcart-${i}`);
+                addcart.classList.remove('hidden');
+                
+                document.querySelector(`#addcart-${i}`).addEventListener('click', (event) => {
+                    event.stopPropagation(); 
+                    
+                    card.push(data[i]);
+                    console.log(card);
+                    localStorage.setItem('card', JSON.stringify(card));
+                });
+            });
+            
         document.querySelector(`#box-book-${i}`).addEventListener('mouseleave', () => {
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.add('hidden');
         });
     }
-}
+
 
 
 
@@ -159,8 +174,8 @@ function showdata(){
                 </button>
             </div>
             <div class="w-full h-[50px] bg-black flex justify-center mt-52 items-center absolute hidden" id="addcart-${i}">
-                <button>
-                    <a href=""><h1 class="text-white font-bold text-xl">Add To Cart</h1></a>
+                <button >
+                    <h1 class="text-white font-bold text-xl">Add To Cart</h1>
                 </button> 
             </div>
         </div>
