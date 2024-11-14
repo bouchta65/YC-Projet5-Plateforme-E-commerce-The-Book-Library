@@ -38,10 +38,10 @@ function displayFavBooks() {
                 </div>`
         favContainer.appendChild(newBook);
 
-        // const removeButton = newBook.querySelector('.remove-fav-btn');
-        // removeButton.addEventListener('click', () => {
-        //     newBook.remove();
-        // });
+        const removeButton = newBook.querySelector('.remove-fav-btn');
+        removeButton.addEventListener('click', () => {
+            newBook.remove();
+        });
     });
 
 }
