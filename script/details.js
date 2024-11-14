@@ -1,88 +1,9 @@
-const menuButton = document.getElementById('button-menu');
-const menu = document.getElementById('menuShow');
-let days = parseInt(document.getElementById('days').textContent);
-let hours = parseInt(document.getElementById('hours').textContent);
-let minutes = parseInt(document.getElementById('minutes').textContent);
-let seconds = parseInt(document.getElementById('seconds').textContent);
-
-
-
-// // function timeHome(days,hours,minutes,seconds){
-// //     if (days>0 && hours>0 && minutes > 0 && seconds){
-// //         days--;
-// //         hours--;
-// //         minutes--;
-// //         seconds--;
-// //     }
-// // }
-
-
-// // const countdownInterval = setInterval(timeHome(days,hours,minutes,seconds), 1000);
-
-
-// function startCountdown() {
-//     // Get initial values from input fields
-//     let days = parseInt(document.getElementById('days').textContent);
-//     let hours = parseInt(document.getElementById('hours').textContent);
-//     let minutes = parseInt(document.getElementById('minutes').textContent);
-//     let seconds = parseInt(document.getElementById('seconds').textContent);
-
-//     function updateCountdown() {
-//         if (seconds > 0) {
-//             seconds--;
-//         } else if (minutes > 0) {
-//             minutes--;
-//             seconds = 59;
-//         } else if (hours > 0) {
-//             hours--;
-//             minutes = 59;
-//             seconds = 59;
-//         } else if (days > 0) {
-//             days--;
-//             hours = 23;
-//             minutes = 59;
-//             seconds = 59;
-//         } else {
-//             clearInterval(countdownInterval);
-//             alert("Countdown finished!");
-//             return;
-//         }
-
-//         // Update input fields with new values
-//         document.getElementById('days').value = String(days).padStart(2, '0');
-//         document.getElementById('hours').value = String(hours).padStart(2, '0');
-//         document.getElementById('minutes').value = String(minutes).padStart(2, '0');
-//         document.getElementById('seconds').value = String(seconds).padStart(2, '0');
-//     }
-
-//     const countdownInterval = setInterval(updateCountdown, 1000);
-// }
-
-// startCountdown();
-
-
-
-
-
-const api = "https://file-json-test.vercel.app/fichier.json"
-
-async function booksAPI(){
-    try{
-        const respond = await fetch(api);
-    const data = await respond.json()
-    localStorage.setItem('booksData', JSON.stringify(data));
-
-    }catch{
-        console.error(error)
-    }
-    displayBooks()
-}
-
+let data = []
 
 function displayBooks(){
-    const data = JSON.parse(localStorage.getItem('booksData'))
     let table = "";
-    
+    data = JSON.parse(localStorage.getItem('booksData'));
+
         for(let i =0;i<data.length;i++){
         table =
         `      
@@ -158,4 +79,33 @@ function displayBooks(){
     }
 }
 
-booksAPI()
+
+displayBooks()
+
+
+
+
+
+
+
+// let heartPair=document.getElementById("heartButton");
+// let heart = document.getElementById('heart');
+
+// heart.addEventListener("click",()=>{
+//     if(heart){
+//        heart.parentElement.innerHTML = `<i class="fa-solid fa-heart fa-2x fa-2x" style="color: red;"></i>`;
+        
+// //    heart.innerHTML ='<i class="fa-solid fa-heart" style="color: red;"></i>';
+//  }
+// // else if(heart =='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: #000000;></i>'){
+// //     heart=='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: red;"></i>'  
+
+// })
+
+// let count=1;
+// const moins=getElementById("moins");
+// const plus=getElementById("plus");
+// const countour=getElementById("countour");
+// let span=document.createElement("span");
+// countour.append(span);
+// span.innerText=count;
