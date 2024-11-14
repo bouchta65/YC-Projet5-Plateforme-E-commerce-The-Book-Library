@@ -122,6 +122,7 @@ for(let i = 0 ; i<data.length;i++){
             document.querySelector(`#eyeButton-${i}`).addEventListener('click', () => {
                 let detailbook = [data[i]]
                 localStorage.setItem('detailbook', JSON.stringify(detailbook));
+                window.location.href = 'details.html';
             })
             }
 
