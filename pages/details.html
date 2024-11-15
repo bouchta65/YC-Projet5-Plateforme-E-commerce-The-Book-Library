@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -15,13 +14,12 @@
     <meta property="og:image" content="../images/Home/Logo.png">
     <link rel="icon" href="../images/Home/FavIcone.png">
     <link href="../css/home.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/top-books.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <title>The Book Library - Your Online Bookstore</title>
 </head>
 
-<body>
+<body >
     <nav class="border-gray-200 " style="background-color: #4B6587;">
 
         <div class="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-2"
@@ -137,183 +135,154 @@
 
     <section>
         <div id="container1"
-            class="flex   justify-center gap-8  flex-col items-center mt-2  space-y-9 lg:flex-row   ">
+            class="flex justify-center mt-14 flex-col items-center mb-3  space-y-9 lg:flex-row lg:space-x-3  ">
 
             <!-- image principale -->
-            <div class=" img-hero flex bg-neutral-100	justify-center items-center content-center w-[300px] h[434px] lg:w-[500px] lg:h-[530px]">
+            <div class=" img-hero flex bg-neutral-100	justify-center items-center  lg:w-[500px] lg:h-[634px]">
                 <img src="../images/details/cover-book3.jpg" alt="coverture de la erre des heros"
-                    class="w-[280px] h-[400px] lg:w-[480] lg:h-[500px]  ">
+                    class=" block w-[363px] h-[541px]">
             </div>
 
             <!-- container principale des informations -->
-            <div class="info-hero flex  flex-col mx-6  mx-2 md:flex-col  min-h-[300px] gap-4 ">
+            <div
+                class="info-hero flex  flex-col justify-around ml-6 md:flex-col md:justify-around  h-[441px]">
 
-
-               
-
-                <!-- etoile et le prix et titre -->
-
-                  <!-- titre -->
-                <div class="star flex flex-col ">
+                
+                    <!-- titre -->
                     <div>
                         <h2 class="text-3xl font-semibold font-serif">La Terre Des Héros (1:Héritage)</h2>
                     </div>
 
-                    <!-- etoile -->
-                    <div class="mt-2 flex"> <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
-                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
-                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
-                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
-                        <span> <i class="fa-solid fa-star" style="color: #a1a1a1;"></i></span>
-                         <!-- prix -->
-                        <pre > (150 reviews ) | <span class="font-bold text-2xl">$192.00</span> | <span class="text-bold text-2xl ">0</span></pre>
-                    </div>
-                   
-                </div>
+                    <!-- etoile et le prix -->
+                    <div class="star flex  ">
 
-                <div class=" flex flex-col  justify-around gap-4 my-4">
-
-                    <div class="parag ">
-                        <p> C'est l'histoire d'Aleya, une jeune fille de dix-sept ans qui se réveille dans </p>
-                        <p> un autremonde après avoir touché un objet étrange dans les affaires de sa mère.
-                        </p>
-                        <p>C'est aussi celle d'un roi, assassiné par son frère jumeau</p>
-                        </p>
-                    </div>
-
-                    <!-- ligne des bottons  et j'adore-->
-                    <div class="flex items-center justify-between  ">
-
-                        <!-- button de quantite -->
-                        <div class="border-2 border-solid border-black  h-[46px] flex  rounded-md">
-                            <button id="moins" class=" w-[30px] h-[40px] md:w-[40px] md:h-[44px] text-black ">-</button>
-                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black "></button>
-                            <button id="plus" class="w-[30px] h-[43px] md:w-[40px]  text-white text-center  bg-red-500 ">+</button>
+                        <!-- etoile -->
+                        <div class="mt-2"> <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span> <i class="fa-solid fa-star" style="color: #a1a1a1;"></i></span>
                         </div>
-
-                        <!-- button de buy now -->
-                        <div class="h-[45px] md:w-[165px] w-[120px] bg-red-500 border-1 border-solid border-black  text-center content center items-center rounded-md">
-                            <button class="rounded-sm text-center text-white h-[45px] md:w-[165px] w-[120px] ">Buy Now</button>
-                        </div>
-
-                        <div>
-                            <p id="heartButton"  class="text-center">
-                                <i id="heart" class="fa-regular fa-heart fa-2x fa-2x" style="color: #050505;"></i>
-                                </p>
-                        </div>
+                        <!-- prix -->
+                        <pre> (150 reviews ) | <span class="font-bold text-2xl">$192.00</span></pre>
 
                     </div>
 
-                     <!-- laivraison -->
-                <div class="border-2 border-black border-solid min-h[180px] w-[350px] md:w-[420px]  lg:w-[500px] ">
-                    <!-- premiere partie -->
-                    <div class="flex justify-around border-b-2 border-solid border-black mt-2 gap-8">
-                        <div>
-                            <img src="../images/details/delivery.png" alt="icone de voiture de laivraison"
-                                class="h-[40px] w-[40px]">
+                    <div class=" flex flex-col  ">
+
+                        <div class="parag ">
+                            <p> C'est l'histoire d'Aleya, une jeune fille de dix-sept ans qui se réveille dans </p>
+                            <p> un autremonde après avoir touché un objet étrange dans les affaires de sa mère.
+                            </p>
+                            <p>C'est aussi celle d'un roi, assassiné par son frère jumeau</p>
+                            </p>
                         </div>
 
-                        <div class="gap-5">
-                            <p>Free Delivery</p>
-                            <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
+                        <!-- ligne des bottons  et j'adore-->
+                        <div class="flex items-center  ">
+
+                            <!-- button de quantite -->
+                            <div class="border-2 border-solid border-black w-[160px] h-[46px] flex  rounded-md">
+                                <button class="w-[40px] h-[44px] text-black ">-</button>
+                                <button
+                                    class="w-[80px] h-[44px] border-r-2 border-l-2 border-solid border-black text-black ">0</button>
+                                <button class="w-[40px] h[43px] text-white text-center  bg-red-500 ">+</button>
+                            </div>
+
+                            <!-- button de buy now -->
+                            <div class="h-[45px] w-[165px] bg-red-500 border-1 border-solid border-black  rounded-md">
+                                <button class="rounded-sm text-center h-[42px] w-[165px]">Buy Now</button>
+                            </div>
+
+                            <div >
+                                <p class="text-center mt-1"><i class="fa-regular fa-heart fa-2x fa-2x  "
+                                        style="color: #050505;"></i></p>
+                            </div>
+
+                        </div>
+                    </div>    
+
+                        <!-- laivraison -->
+                        <div class="border-2 border-black border-solid ">
+                            <!-- premiere partie -->
+                            <div
+                                class="flex justify-around border-b-2 border-solid border-black mt-2">
+                                <div>
+                                    <img src="../images/details/delivery.png" alt="icone de voiture de laivraison"
+                                        class="h-[40px] w-[40px]">
+                                </div>
+
+                                <div>
+                                    <p>Free Delivery</p>
+                                    <br>
+                                    <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
+                                </div>
+                            </div>
+
+                            <!-- deuxieme partie -->
+                            <div class="flex justify-around  ">
+                                <div>
+                                    <p><i class="fa-solid fa-rotate fa-2x fa-2x" style="color: #000000;"></i></p>
+                                </div>
+
+                                <div>
+                                    <p>Free Delivery</p>
+                                    <br>
+                                    <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                
 
-                    <!-- deuxieme partie -->
-                    <div class="flex justify-around gap-8 ">
-                        <div >
-                            <p><i class="fa-solid fa-rotate fa-2x fa-2x" style="color: #000000;"></i></p>
-                        </div>
 
-                        <div class="gap-5">
-                            <p>Free Delivery</p>
-                            <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
-                        </div>
-                    </div>
 
-                </div>
-                </div>
-
-               
             </div>
-
-
-
-
-        </div>
 
     </section>
-   
-   
+    <section>
+        <h3 class="text-blue-400">Vous aimerez aussi</h3>
+        <div class="grid-cols-2 gap-2">
 
+        </div>
 
+        <div class="grid-cols-2 gap-2">
     
-<div class="flex justify-center">
-
-   
-
-    <!-- Make the grid responsive with appropriate Tailwind breakpoints -->
-    <div class="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4" >
-       
-        <div id="book-element">
-            <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
-                <div class="w-[123px] h-[175px]">
-                    <img src=${data[i].img} alt="">
-                </div>
-                <div class="w-[55px] h-[30px] rounded flex justify-center absolute mb-48 mr-48 items-center" style="background-color: #4B6587;">
-                    <h1 class="text-white">-40%</h1>
-                </div>
-                <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center items-center absolute ml-52 mb-48">
-                    <button class="  heartButton text-black text-xl focus:outline-none">
-                        <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                    </button>
-                </div>
-                <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center mb-24 items-center absolute ml-52">
-                    <button id="eyeButton-${i}" class="text-gray-400 text-xl focus:outline-none">
-                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
-                    </button>
-                </div>
-                <div class="w-full h-[50px] bg-black flex justify-center mt-52 items-center absolute hidden" id="addcart-${i}">
-                    <button>
-                        <a href=""><h1 class="text-white font-bold text-xl">Add To Cart</h1></a>
-                    </button> 
-                </div>
             </div>
-            <div class="mt-3">
-                <h1 class="font-bold">${data[i].title}</h1>
-                <div class="flex space-x-3">
-                    <h3 class="text-gray-500 font-bold">${data[i].price}$</h3>
-                    <h3 class="text-gray-500 font-bold line-through">${data[i].price+19.9}$</h3>
-                </div>
-                <div class="flex space-x-2 mt-1 relative">
-                   <div>
-                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                    <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                   </div>
-                    <div><h1 class="absolute text-gray-500 font-bold ">(88)</h1></div>
-    
-                </div>
-                
-            </div>  
-        </div>
-        <div id="book-element1">
+
+            <div class="grid-cols-2 gap-2">
             
+                </div>
+
+                <div class="grid-cols-2 gap-2">
+                
+                    </div>
+    </section>
+
+    <section>
+        <h3 class="text-blue-400">Vous aimerez aussi</h3>
+        <div class="grid-cols-2 gap-2">
+
         </div>
-        <div id="book-element2"></div>
-        <div id="book-element3"></div>
+            <div class="grid-cols-2 gap-2">
+    
+            </div>
 
-      
-    </div>
-</div>
+            <div class="grid-cols-2 gap-2">
+            
+                </div>
 
-<div class="flex justify-center mt-9">
-    <button type="button" class="text-white bg-custembleumenu hover:bg-slate-400  font-bold rounded-md  px-5 py-2.5 text-center me-2 mb-2"><a href="books.html">View All Books</a></button>
-</div>
- 
-   
+                <div class="grid-cols-2 gap-2">
+                
+                    </div>
+    </section>
+
+    <button id="toTopBtn" 
+    class="fixed bottom-5 right-5 hidden p-3 rounded-full bg-[#4B6587] text-white shadow-lg hover:bg-[#F9F073] ">
+    <i class="ri-arrow-up-double-line text-2xl "></i>
+    </button>
+
     <footer class="bg-black text-white py-12">
         <div class="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12">
             <!-- About Us -->
@@ -373,7 +342,9 @@
         </div>
     </footer>
 
-    <script src="../script/details.js"></script>
+
+    <script src="../script/home.js"></script>
+    <script src="../script/totop.js"></script>
 </body>
 
 </html>
