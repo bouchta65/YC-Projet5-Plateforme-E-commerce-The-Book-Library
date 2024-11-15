@@ -1110,10 +1110,6 @@ video {
   width: 100%;
 }
 
-.w-auto{
-  width: auto;
-}
-
 .w-\[160px\]{
   width: 160px;
 }
@@ -1261,10 +1257,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .gap-x-2{
@@ -1522,11 +1514,6 @@ video {
 .bg-yellow-200{
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
-}
-
-.bg-orange-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -1973,13 +1960,6 @@ video {
 @media not all and (min-width: 640px){
   .max-sm\:w-\[270px\]{
     width: 270px;
-  }
-}
-
-@media (max-width: 600px){
-  .max-\[600px\]\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 
