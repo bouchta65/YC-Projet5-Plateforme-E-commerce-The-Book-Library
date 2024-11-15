@@ -1,118 +1,134 @@
-let data = []
 
-function displayBooks() {
-    let table = "";
-    data = JSON.parse(localStorage.getItem('booksData'));
+function affichData(){
+let detailbook = JSON.parse(localStorage.getItem('detailbook')) || [];
 
-    for (let i = 0; i < data.length; i++) {
-        table =
-            `      
-         <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
-            <div class="w-[123px] h-[175px]">
-                <img src=${data[i].img} alt="">
+let table="";
+
+table=  `  
+   <!-- image principale -->
+            <div class=" img-hero flex bg-neutral-100	justify-center items-center content-center w-[300px] h[434px] lg:w-[500px] lg:h-[530px]">
+                <img src=${detailbook[0].img} id="kingImg"
+                    class="w-[280px] h-[400px] lg:w-[480] lg:h-[500px]  ">
             </div>
-            <div class="w-[55px] h-[30px] rounded flex justify-center absolute mb-48 mr-48 items-center" style="background-color: #4B6587;">
-                <h1 class="text-white">-40%</h1>
-            </div>
-            <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center items-center absolute ml-52 mb-48">
-                <button id="heartButton-${i}" class="text-black text-xl focus:outline-none">
-                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                </button>
-            </div>
-            <div class="w-[40px] h-[40px] bg-white rounded-full flex justify-center mb-24 items-center absolute ml-52">
-                <button id="eyeButton-${i}" class="text-gray-400 text-xl focus:outline-none">
-                    <i class="fa-regular fa-eye" style="color: #000000;"></i>
-                </button>
-            </div>
-            <div class="w-full h-[50px] bg-black flex justify-center mt-52 items-center absolute hidden" id="addcart-${i}">
-                <button>
-                    <a href=""><h1 class="text-white font-bold text-xl">Add To Cart</h1></a>
-                </button> 
-            </div>
-        </div>
-        <div class="mt-3">
-            <h1 class="font-bold">${data[i].title}</h1>
-            <div class="flex space-x-3">
-                <h3 class="text-gray-500 font-bold">${data[i].price}$</h3>
-                <h3 class="text-gray-500 font-bold line-through">${data[i].price + 19.9}$</h3>
-            </div>
-            <div class="flex space-x-2 mt-1 relative">
-               <div>
-                <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-                <i class="fa-sharp fa-solid fa-star" style="color: #ffad33;"></i>
-               </div>
-                <div><h1 class="absolute text-gray-500 font-bold ">(88)</h1></div>
 
-            </div>
-            
-        </div>   
-    `
-        if (i == 0) {
-            document.querySelector("#book-element").innerHTML = table;
-
-        } else if (i == 1) {
-            document.querySelector("#book-element1").innerHTML = table;
-        } else if (i == 2) {
-            document.querySelector("#book-element2").innerHTML = table;
-        } else {
-            document.querySelector("#book-element3").innerHTML = table;
-        }
+            <!-- container principale des informations -->
+            <div class="info-hero flex  flex-col   mx-2 md:flex-col  min-h-[300px] gap-4 ">
 
 
-        document.querySelector(`#heartButton-${i}`).addEventListener('click', () => {
-            const heartIcon = document.querySelector(`#heartButton-${i}`);
-            heartIcon.innerHTML = '<i class="fa-solid fa-heart" style="color: red;"></i>';
-        });
+               
 
-        document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
-            const addcart = document.querySelector(`#addcart-${i}`);
-            addcart.classList.remove('hidden');
-        });
+                <!-- etoile et le prix et titre -->
 
-        document.querySelector(`#box-book-${i}`).addEventListener('mouseleave', () => {
-            const addcart = document.querySelector(`#addcart-${i}`);
-            addcart.classList.add('hidden');
-        });
-    }
+                  <!-- titre -->
+                <div class="star flex flex-col ">
+                    <div>
+                        <h2 id="title" class="text-3xl font-semibold font-serif">${detailbook[0].title}</h2>
+                    </div>
+
+                    <!-- etoile -->
+                    <div class="mt-2 flex"> <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span> <i class="fa-solid fa-star" style="color: #a1a1a1;"></i></span>
+                         <!-- prix -->
+                        <pre  > (150 reviews ) | <span id="price" class="font-bold text-2xl">${detailbook[0].price}</span> | <span  id="stock" class="text-bold text-2xl ">${detailbook[0].stock}</span></pre>
+                    </div>
+                   
+                </div>
+
+                <div class=" flex flex-col  justify-around gap-4 my-4">
+
+                    <div class="parag w-[370px]">
+                        <p id="descreption"> </p>
+                        ${detailbook[0].description}
+                        </p>
+                    </div>
+
+                    <!-- ligne des bottons  et j'adore-->
+                    <div class="flex items-center justify-between  ">
+
+                        <!-- button de quantite -->
+                        <div class="border-2 border-solid border-black  h-[46px] flex  rounded-md">
+                            <button id="moins" class=" w-[30px] h-[40px] md:w-[40px] md:h-[44px] text-black ">-</button>
+                            <button id="countour" class=" md:w-[80px] h-[44px] w-[60px] border-r-2 border-l-2 border-solid border-black text-black ">0</button>
+                            <button id="plus" class="w-[30px] h-[43px] md:w-[40px]  text-white text-center  bg-red-500 ">+</button>
+                        </div>
+
+                        <!-- button de buy now -->
+                        <div class="h-[45px] md:w-[165px] w-[120px] bg-red-500 border-1 border-solid border-black  text-center content center items-center rounded-md">
+                            <button id="buyNowbutton" class="rounded-sm text-center text-white h-[45px] md:w-[165px] w-[120px] ">Buy Now</button>
+                        </div>
+
+                        <div>
+                            <p id="heartButton"  class="text-center">
+                                <i id="heart" class="fa-regular fa-heart fa-2x fa-2x" style="color: #050505;"></i>
+                                </p>
+                        </div>
+
+                    </div>
+
+                     <!-- laivraison -->
+                <div class="border-2 border-black border-solid min-h[180px] w-[350px] md:w-[420px]  lg:w-[500px] ">
+                    <!-- premiere partie -->
+                    <div class="flex justify-around border-b-2 border-solid border-black mt-2 gap-8">
+                        <div>
+                            <img src="../images/details/delivery.png" alt="icone de voiture de laivraison"
+                                class="h-[40px] w-[40px]">
+                        </div>
+
+                        <div class="gap-5">
+                            <p>Free Delivery</p>
+                            <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
+                        </div>
+                    </div>
+
+                    <!-- deuxieme partie -->
+                    <div class="flex justify-around gap-8 ">
+                        <div >
+                            <p><i class="fa-solid fa-rotate fa-2x fa-2x" style="color: #000000;"></i></p>
+                        </div>
+
+                        <div class="gap-5">
+                            <p>Free Delivery</p>
+                            <p> <a href="#">Enter your postal code for Delivery Availability</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+               
+            </div>
+`
+
+document.querySelector("#container1").innerHTML = table
+};
+
+
+
+
+
+let quantite="";
+
+function buyNow(){
+    document.querySelector("#buyNowbutton").addEventListener('click',()=>{
+   let quantite = countour.innerText;
+   let detailbook = JSON.parse(localStorage.getItem('detailbook')) || [];
+   let card = JSON.parse(localStorage.getItem('card')) || [];
+   detailbook[0] = { ...detailbook[0], quantity: quantite };
+    localStorage.setItem('card', JSON.stringify(detailbook));
+   console.log(detailbook)
+})
 }
 
 
-displayBooks()
-
-
-
-let detailbook1 = JSON.parse(localStorage.getItem('detailbook')) || [];
-
-let stockage;
-
-let heartPair = document.getElementById("heartButton");
-let heart = document.getElementById('heart');
-
-heart.addEventListener("click", () => {
-    if (heart) {
-        heart.parentElement.innerHTML = `<i class="fa-solid fa-heart fa-2x fa-2x" style="color: red;"></i>`;
-
-        //    heart.innerHTML ='<i class="fa-solid fa-heart" style="color: red;"></i>';
-    }
-    // else if(heart =='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: #000000;></i>'){
-    //     heart=='  <i class="fa-regular fa-heart fa-2x fa-2x" style="color: red;"></i>'  
-
-})
+affichData()
 
 let count =0;
 const moins = document.getElementById("moins");
 const plus = document.getElementById("plus");
 const countour = document.getElementById("countour");
-const buyNow = document.getElementById("buyNow");
-const stock=document.getElementById("stock");
-const descreption=document.getElementById("descreption");
-const price=document.getElementById("price")
-
-
-
 
 plus.addEventListener('click', () => {
     countour.innerText = count++;
@@ -124,23 +140,4 @@ moins.addEventListener('click', () => {
     }
 });
 
-buyNow.addEventListener('click', () => {
-  let titre=document.getElementById("title").innerText;
-  titre='The Little Prince';
-  const index = data.findIndex((element) => element.title === titre);
-  if(count != 0){
-  data[index].stock= data[index].stock-count;
-  stock.innerText=data[index].stock;
-  count=0;
-  countour.innerText = count;
-}
-  
-});
-                                                   
-const detailbook = JSON.parse(localStorage.getItem('detailbook'));
-title.innerText=data[5].title;
-kingImg.src=data[5].img;
-kingImg.alt="image de la couverture de le livre )";
-descreption.innerText=data[5].description;
-price.innerText=data[5].price + " $";
-stock.innerText=data[5].stock;
+buyNow();
