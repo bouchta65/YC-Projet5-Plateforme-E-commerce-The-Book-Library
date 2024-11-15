@@ -54,3 +54,65 @@ sorting.onchange = function(){
     }
 
 }
+let filteredData = [];
+
+filterByLang.onchange= function() {
+
+    filteredData = [];
+    if(filterByGenre.value === "none"){
+        for (let book of booksData) { 
+          
+            if(book.language === filterByLang.value ){filteredData.push(book)}
+        }
+        displayBooks(filteredData);
+        return;
+    }
+
+    for (let book of booksData) { 
+          
+        if(book.language === filterByLang.value && book.category.includes(filterByGenre.value)){filteredData.push(book)}
+    }
+    displayBooks(filteredData);
+    }
+filterByGenre.onchange = function () {
+
+    filteredData = [];
+    if(filterByLang.value === "none"){
+        for (let book of booksData) { 
+          
+            if(book.language === filterByLang.value ){filteredData.push(book)}
+        }
+        displayBooks(filteredData);
+        return;
+    }
+
+    for (let book of booksData) { 
+          
+        if(book.language === filterByLang.value && book.category.includes(filterByGenre.value)){filteredData.push(book)}
+    }
+    displayBooks(filteredData);
+    }
+
+const Search = getElementById("search");
+
+Search.onkeydown = function () {
+    console.log(4);
+    
+    booksContainer.innerHTML = "";
+    for(let book of booksData){
+        if(book.title === Search.value) {
+        let bookElement = document.createElement('div');
+          bookElement.classList.add('book-item','w-auto','flex','flex-col','items-center','gap-1');
+
+          bookElement.innerHTML = `<div class="w-auto h-[350px] flex flex-col items-center justify-between gap-1 ">
+            <div class="bg-[#4B6587] w-[200px] h-[230px] max-[750px]:w-[130px] ">
+            <a onclick="" href="../pages/details.html"><img src="${book.img}" alt="${book.title} " class="w-full h-full"></a>
+            </div>
+            <h2 class="font-bold text-center">${book.title}</h2>
+            <h3 class="font-extralight text-center">${book.author}</h3>
+            <button type="button" id="${book.id}" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
+          </div>`
+          booksContainer.appendChild(bookElement);
+
+      }
+    }}
