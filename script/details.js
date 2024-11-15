@@ -38,7 +38,7 @@ function affichData() {
                     </div>
 
                          <!-- prix -->
-                        <pre> <span class="font-bold text-2xl">(120 views)</span> | <span id="price" class="font-bold text-2xl">${detailbook[0].price} $</span> | <span  id="stock" class="font-bold text-2xl">${detailbook[0].stock}</span></pre>
+                        <pre><span class="font-bold text-2xl">(120 views)</span> | <span id="price" class="font-bold text-2xl">${detailbook[0].price} $</span> | <span  id="stock" class="font-bold text-2xl">${detailbook[0].stock}</span></pre>
                     </div>
                    
                 </div>
@@ -178,7 +178,7 @@ if (favourite.some(book => book.id === detailbook[0].id)) {
 
     heartIcon.classList.add('fa-solid');
     heartIcon.classList.remove('fa-regular');
-    addHeart();
+    heartIcon.style.color = 'red';
 } else {
 
     heartIcon.classList.remove('fa-solid');
@@ -211,33 +211,3 @@ heartIcon.addEventListener('click', () => {
     localStorage.setItem('favourite', JSON.stringify(favourite));
 });
 
-function addHeart() {
-    let opacity = 0;
-    function decrease() {
-        opacity += 0.02;
-        if(opacity < 1) {
-            task.style.opacity = opacity;
-            heartIcon.style.color = 'red';
-            requestAnimationFrame(decrease);
-        } 
-    }
-
-    decrease();
-}
-
-function moveHeart() {
-    let opacity = 1;
-    function decrease() {
-        opacity -= 0.02;
-        if(opacity <= 0) {
-            task.style.opacity = 0;
-            task.remove();
-            updateCounters();
-        } else {
-            task.style.opacity = opacity;
-            requestAnimationFrame(decrease);
-        }
-    }
-
-    decrease();
-}
