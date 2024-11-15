@@ -28,8 +28,9 @@ function affichData() {
                     </div>
 
                     <!-- etoile -->
-                    <div class="mb-2 flex"> <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
-                    <div>
+                    <div class="mb-2 flex"> 
+                    <div class="gap-2>
+                    <span> <i class="fa-solid fa-star " style="color: #FFD43B;"></i></span>
                         <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
                          <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
                         <span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
@@ -177,7 +178,7 @@ if (favourite.some(book => book.id === detailbook[0].id)) {
 
     heartIcon.classList.add('fa-solid');
     heartIcon.classList.remove('fa-regular');
-    heartIcon.style.color = 'red';
+    addHeart();
 } else {
 
     heartIcon.classList.remove('fa-solid');
@@ -209,3 +210,34 @@ heartIcon.addEventListener('click', () => {
 
     localStorage.setItem('favourite', JSON.stringify(favourite));
 });
+
+function addHeart() {
+    let opacity = 0;
+    function decrease() {
+        opacity += 0.02;
+        if(opacity < 1) {
+            task.style.opacity = opacity;
+            heartIcon.style.color = 'red';
+            requestAnimationFrame(decrease);
+        } 
+    }
+
+    decrease();
+}
+
+function moveHeart() {
+    let opacity = 1;
+    function decrease() {
+        opacity -= 0.02;
+        if(opacity <= 0) {
+            task.style.opacity = 0;
+            task.remove();
+            updateCounters();
+        } else {
+            task.style.opacity = opacity;
+            requestAnimationFrame(decrease);
+        }
+    }
+
+    decrease();
+}
