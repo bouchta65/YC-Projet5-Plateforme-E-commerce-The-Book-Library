@@ -16,10 +16,13 @@ async function booksAPI(){
 const data = JSON.parse(localStorage.getItem('booksData'))
 
 window.onload = function() {
+    // localStorage.removeItem("card");
     booksAPI()
     showdata()
+    countbook()
     displayBooks()
     
+
 };
 
 // // function timeHome(days,hours,minutes,seconds){
@@ -78,46 +81,45 @@ window.onload = function() {
 
 let favourite = JSON.parse(localStorage.getItem('favourite')) || [];
 let card = JSON.parse(localStorage.getItem('card')) || [];
+let quantite = {};
 
 
 
+function countbook(){
+    let countbook = document.querySelector("#book-count")  
+    countbook.innerHTML = card.length
 
+0}
 
 function displayBooks(){
 
 for(let i = 0 ; i<data.length;i++){
-    const heartIcon = document.querySelector(`#heartButton-${i} i`);
-    if(favourite.some(book => book.id === data[i].id)){
-        heartIcon.classList.add('fa-solid');
-        heartIcon.classList.remove('fa-regular');
-        heartIcon.style.color = 'red';
-       }else{
-        heartIcon.classList.remove('fa-solid');
-        heartIcon.classList.add('fa-regular');
-        heartIcon.style.color = 'black'; 
-       }
- document.querySelector(`#heartButton-${i}`).addEventListener('click', () => {
-            
+    
+    const heartButton = document.querySelector(`#heartButton-${i}`);
+
+
+    if (heartButton) {
+        const heartIcon = heartButton.querySelector('i');
+        if (favourite.some(book => book.id === data[i].id)) {
+            heartIcon.classList.add('fa-solid');
+            heartIcon.classList.remove('fa-regular');
+            heartIcon.style.color = 'red';
+        }
+
+        heartButton.addEventListener('click', () => {
             if (heartIcon.classList.contains('fa-solid')) {
                 heartIcon.classList.remove('fa-solid');
                 heartIcon.classList.add('fa-regular');
                 heartIcon.style.color = 'black';
-
-                const index = favourite.findIndex(book => book.id === data[i].id);
-                if (index !== -1) {
-                    favourite.splice(index, 1); 
-                }
+                favourite = favourite.filter(book => book.id !== data[i].id);
             } else {
-                    heartIcon.classList.add('fa-solid');
-                    heartIcon.classList.remove('fa-regular');
-                    heartIcon.style.color = 'red';
-                    favourite.push(data[i])
-                   
-                console.log(favourite)   
-                }
-
-                localStorage.setItem('favourite', JSON.stringify(favourite));
-            });
+                heartIcon.classList.add('fa-solid');
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.style.color = 'red';
+                favourite.push(data[i]);
+            }
+            localStorage.setItem('favourite', JSON.stringify(favourite));
+        });
             
             document.querySelector(`#eyeButton-${i}`).addEventListener('click', () => {
                 let detailbook = [data[i]]
@@ -130,21 +132,35 @@ for(let i = 0 ; i<data.length;i++){
             document.querySelector(`#box-book-${i}`).addEventListener('mouseenter', () => {
                 const addcart = document.querySelector(`#addcart-${i}`);
                 addcart.classList.remove('hidden');
-                
+              
                 document.querySelector(`#addcart-${i}`).addEventListener('click', (event) => {
-                    event.stopPropagation(); 
-                    
-                    card.push(data[i]);
-                    console.log(card);
-                    localStorage.setItem('card', JSON.stringify(card));
-                });
-            });
+                  event.stopPropagation();
+              
+                  if (!quantite[i]) {
+                    quantite[i] = 0;
+                  }
+              
+                  const exitaddcard = card.findIndex(item => item.id === data[i].id);
+                  if (exitaddcard !== -1) {
+                    card[exitaddcard].quantity = 1; 
+                  } else {
+                    quantite[i] += 1;
+                    let datacard = { ...data[i], quantity: quantite[i] };
+                    card.push(datacard);
+                  }
+              
+                  localStorage.setItem('card', JSON.stringify(card));
+                  countbook();
+                },{ once: true });
+              });
+              
             
         document.querySelector(`#box-book-${i}`).addEventListener('mouseleave', () => {
             const addcart = document.querySelector(`#addcart-${i}`);
             addcart.classList.add('hidden');
         });
     }  }
+}
 
 
 
@@ -157,6 +173,8 @@ function showdata(){
         for(let i =0;i<data.length;i++){
         table =
         `      
+        <div id="book-element-${i}">
+        
          <div class="bg-custemgraytext w-[270px] h-[250px] flex justify-center items-center relative" id="box-book-${i}">
             <div class="w-[123px] h-[175px]">
                 <img src=${data[i].img} alt="">
@@ -199,15 +217,13 @@ function showdata(){
             </div>
             
         </div>   
-    `
-        if(i==0){
-            document.querySelector("#book-element").innerHTML = table;
+        </div>
 
-        }else if(i==1){
-            document.querySelector("#book-element1").innerHTML = table;
-        }else if (i==2){
-            document.querySelector("#book-element2").innerHTML = table;
-        }else if (i==3){
-            document.querySelector("#book-element3").innerHTML = table;
-        }
+    `  
+    if(i<4){
+        document.querySelector("#div-book1").innerHTML += table
+    }else if(i>=4 && i<12){
+        document.querySelector("#div-book2").innerHTML += table
+    }
+      
 }}
