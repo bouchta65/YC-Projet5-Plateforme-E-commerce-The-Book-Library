@@ -120,16 +120,14 @@
         </section>
         <section>
           <div class="SearchSection">
-            <form action="#" class="bg-gray-200 p-1 rounded-sm flex justify-between justify-self-end focus-within:border-gray-400 border-4 sm:w-[400px] max-sm:w-[270px] mt-16 mr-7">
-              <label for="search" class="w-[90%]">
-                <input type="text" name="search" id="search" class="bg-gray-200 outline-none p-1  placeholder:text-gray-600 placeholder:text-sm" placeholder="What are you looking for?">
-              </label>
-              <button type="submit" class="">
+              <label for="search" class="bg-gray-200 p-1 rounded-sm flex justify-between justify-self-end focus-within:border-gray-400 border-4 sm:w-[400px] max-sm:w-[270px] mt-16 mr-7">
+                <input type="text" name="search" id="search" class="w-[90%] bg-gray-200 outline-none p-1  placeholder:text-gray-600 placeholder:text-sm" placeholder="What are you looking for?">
+              <button type="button" class="">
                 <svg class="w-6 h-6 text-black  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                 </svg>
-              </button>
-            </form>
+              </button></label>
+              
           </div>
         </section>
         <section>
@@ -137,21 +135,16 @@
           <div class="FilterSectuin flex  gap-x-2">
             <h3 class="text-blue-950 font-bold text-xl" style="font-family:'Poppins';">Filter:</h3>
             <select name="byGenre" id="genre" class="border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1"><option value="none">By Genre :</option>
-            <option value="fiction" class="text-center">Fiction</option>
-            <option value="non-fiction" class="text-center">Non-Fiction</option>
-            <option value="adult" class="text-center">Adult</option>
-            <option value="children" class="text-center">Children</option>
+            <option value="Fiction" class="text-center">Fiction</option>
+            <option value="Non-Fiction" class="text-center">Non-Fiction</option>
+            <option value="Adult" class="text-center">Adult</option>
+            <option value="Children" class="text-center">Children</option>
             </select>
             <select name="byLanuagege" id="language" class="border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1">
             <option value="none">By Language</option>
             <option value="Arabic" class="text-center">Arabic</option>
             <option value="English" class="text-center">English</option>
             <option value="French" class="text-center">French</option>
-            <option value="Portuguese" class="text-center">Portuguese</option>
-            <option value="Spanish" class="text-center">Spanish</option>
-            <option value="Italian" class="text-center">Italian</option>
-            <option value="Russian" class="text-center">Russian</option>
-            <option value="German" class="text-center">German</option>
           </select>
           </div>
           <div class="SortSection flex gap-x-2">
