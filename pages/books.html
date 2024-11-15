@@ -15,8 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
 
     <title>The Book Library - Your Online Bookstore</title>
@@ -145,9 +146,14 @@
             </select>
             <select name="byLanuagege" id="language" class="border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1">
             <option value="none">By Language</option>
-            <option value="arabic" class="text-center">Arabic</option>
-            <option value="english" class="text-center">English</option>
-            <option value="french" class="text-center">French</option>
+            <option value="Arabic" class="text-center">Arabic</option>
+            <option value="English" class="text-center">English</option>
+            <option value="French" class="text-center">French</option>
+            <option value="Portuguese" class="text-center">Portuguese</option>
+            <option value="Spanish" class="text-center">Spanish</option>
+            <option value="Italian" class="text-center">Italian</option>
+            <option value="Russian" class="text-center">Russian</option>
+            <option value="German" class="text-center">German</option>
           </select>
           </div>
           <div class="SortSection flex gap-x-2">
@@ -162,55 +168,7 @@
         </div>
         </section>
         <section>
-          <div class="books-info grid grid-cols-4 gap-5 justify-self-center  w-[80%] max-lg:grid-cols-3 max-[500px]:grid-cols-2 mb-8">
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
-            <div class="w-auto flex flex-col items-center gap-1 ">
-              <img src="../images/Favoutite/cover1.jpg" alt="The Anxious Generation">
-              <h2 class="font-bold text-center">The Anxious Generation</h2>
-              <h3 class="font-extralight text-center">Kristin Hannah</h3>
-              <button type="button" id="addCart" class="bg-orange-600 font-bold text-white  h-[40px] w-auto text-center max-[600px]:text-xs rounded-md py-2 px-3 ">Add to Cart</button>
-            </div>
+          <div class="books-container grid grid-cols-4 gap-5 justify-self-center grid-rows-4  w-[80%] max-lg:grid-cols-3 max-[500px]:grid-cols-2 mb-8">
             
             </div>
             <div class="pagination justify-self-center my-16 ">
@@ -230,7 +188,6 @@
         </section>
 
     </main>
-
     <button id="toTopBtn" 
     class="fixed bottom-5 right-5 hidden p-3 rounded-full bg-[#4B6587] text-white shadow-lg hover:bg-[#F9F073] ">
     <i class="ri-arrow-up-double-line text-2xl "></i>
@@ -290,6 +247,7 @@
 </footer>
       
       <script src="../script/home.js"></script>
+      <script src="../script/books.js"></script>
       <script src="../script/totop.js"></script>
     </body>
 </html>
