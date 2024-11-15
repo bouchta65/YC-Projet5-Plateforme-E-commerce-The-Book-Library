@@ -1,6 +1,8 @@
 
-function affichData(){
 let detailbook = JSON.parse(localStorage.getItem('detailbook')) || [];
+
+function affichData(){
+
 
 let table="";
 
@@ -12,7 +14,7 @@ table=  `
             </div>
 
             <!-- container principale des informations -->
-            <div class="info-hero flex  flex-col   mx-2 md:flex-col  min-h-[300px] gap-4 ">
+            <div class="info-hero flex  flex-col  justify-center mx-2 md:flex-col  min-h-[300px] gap-4 ">
 
 
                
@@ -22,7 +24,7 @@ table=  `
                   <!-- titre -->
                 <div class="star flex flex-col ">
                     <div>
-                        <h2 id="title" class="text-3xl font-semibold font-serif">${detailbook[0].title}</h2>
+                        <h2 id="title" class="text-3xl text-center  font-semibold font-serif">${detailbook[0].title}</h2>
                     </div>
 
                     <!-- etoile -->
@@ -61,9 +63,9 @@ table=  `
                         </div>
 
                         <div>
-                            <p id="heartButton"  class="text-center">
-                                <i id="heart" class="fa-regular fa-heart fa-2x fa-2x" style="color: #050505;"></i>
-                                </p>
+                           <button id="heartButton" class="text-black text-xl ">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                    </button>
                         </div>
 
                     </div>
@@ -109,6 +111,16 @@ document.querySelector("#container1").innerHTML = table
 
 
 
+
+
+
+
+
+
+
+
+
+
 let quantite="";
 
 function buyNow(){
@@ -124,6 +136,12 @@ function buyNow(){
 
 
 affichData()
+
+
+
+
+
+
 
 let count =0;
 const moins = document.getElementById("moins");
@@ -141,3 +159,47 @@ moins.addEventListener('click', () => {
 });
 
 buyNow();
+
+
+//ajouter la fonctionalite de favoris
+
+let favourite = JSON.parse(localStorage.getItem('favourite')) || [];
+
+const heartIcon = document.querySelector("#heartButton i");
+
+if(favourite.some(book => book.id === detailbook[0].id)){
+
+   heartIcon.classList.add('fa-solid');
+    heartIcon.classList.remove('fa-regular');
+    heartIcon.style.color = 'red';
+ }else{
+
+ heartIcon.classList.remove('fa-solid');
+   heartIcon.classList.add('fa-regular');
+   heartIcon.style.color = 'black'; 
+ }
+heartIcon.addEventListener('click', () => {
+
+        if (heartIcon.classList.contains('fa-solid')) {
+        
+            heartIcon.classList.remove('fa-solid');
+            heartIcon.classList.add('fa-regular');
+            heartIcon.style.color = 'black';
+
+            const index = favourite.findIndex(book => book.id === detailbook[0].id);
+            if (index !== -1) {
+           
+                favourite.splice(index, 1); 
+            }
+        } else {
+        
+                heartIcon.classList.add('fa-solid');
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.style.color = 'red';
+                favourite.push(detailbook[0]);
+               
+
+            }
+
+            localStorage.setItem('favourite', JSON.stringify(favourite));
+        });
