@@ -44,13 +44,13 @@
                <a href="cart.html">
                 <img class="w-6 h-6" src="../images/Home/shopping-cart (1).png" alt="shopping cart icon">
                 <!-- hada lcount number -->
-                <span class="absolute top-1 right-2 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-black bg-customYellow rounded-full transform translate-x-1/2 -translate-y-1/2">
-                    3
+                <span id="book-count" class="absolute top-1 right-2 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-black bg-customYellow rounded-full transform translate-x-1/2 -translate-y-1/2">
+            
                 </span>
                </a>
             </button>
             
-            <div class="z-50 hidden fixed top-16 right-0 h-screen w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg  transition-all ease-in-out transform scale-95 opacity-0" id="menuShow">
+            <div class="z-50 hidden fixed top-[34px] right-[-5px]  h-screen w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg transition-all ease-in-out transform scale-95 opacity-0" id="menuShow">
                 <div class="px-8 py-3 text-gray-900 ">
                     
                     <button type="button" class="relative md:mr-3 hover:border hover:border-white hover:rounded-lg p-1 transition duration-200">
@@ -111,14 +111,10 @@
         </div>
       </nav>
       <main>
-        <section>
-          <div style="background-image: url('../images/Books/Books.jpg');" class="QuotesSection bg-cover  relative bg-no-repeat w-full min-h-[30rem] max-md:bg-none" >
-            <div class="bg-yellow-200 w-[80%] p-3 absolute left-[10%] bottom-10 max-[425px]:bottom-1">
-                <q class="quote " style="font-family: 'Sour Gummy', sans-serif;">THE MORE THAT YOU READ, THE MORE THINGS YOU WILL KNOW.
-              THE MORE THAT YOU LEARN,THE MORE PLACES YOU'LL GO.</q>
-              <div class="flex justify-end"><hr class="w-5 border-0 h-[4px] mx-1 bg-black mt-2.5"><p class="quoteAuthor flex font-extralight" style="font-family: 'Sour Gummy', sans-serif;">Dr.Seuss, I Can Read With My Eyes Shut!</div>
-            </div>
-          </div>
+     
+        <section class="relative w-full">
+            <img src="../images/Books/Books.png" alt="Hero Image" class="w-full  object-contain">
+        
         </section>
         <section>
           <div class="SearchSection">
@@ -134,19 +130,26 @@
         </section>
         <section>
           <div class="my-8 bg-orange-100 p-3 flex flex-wrap w-[80%] max-[400px]:w-full justify-between rounded-md gap-3 justify-self-center">
-          <div class="FilterSectuin flex  gap-x-2">
+          <div class="FilterSectuin flex flex-wrap  gap-2">
             <h3 class="text-blue-950 font-bold text-xl" style="font-family:'Poppins';">Filter:</h3>
             <select name="byGenre" id="genre" class="border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1"><option value="none">By Genre :</option>
-            <option value="Fiction" class="text-center">Fiction</option>
-            <option value="Non-Fiction" class="text-center">Non-Fiction</option>
-            <option value="Adult" class="text-center">Adult</option>
-            <option value="Children" class="text-center">Children</option>
+            <option value="Science Fiction" class="text-center">Science Fiction</option>
+            <option value="Fantasy" class="text-center">Fantasy</option>
+            <option value="Thriller" class="text-center">Thriller</option>
+            <option value="Historical Fiction" class="text-center">Historical Fiction</option>
+            <option value="Horror" class="text-center">Horror</option>
             </select>
             <select name="byLanuagege" id="language" class="border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1">
-            <option value="none">By Language</option>
+            <option value="none">By Language:</option>
             <option value="Arabic" class="text-center">Arabic</option>
             <option value="English" class="text-center">English</option>
             <option value="French" class="text-center">French</option>
+          </select>
+          <select name="byType" id="byType" class=" border-2 outline-none rounded-md border-black text-sm w-[113px] self-center p-1">
+            <option value="none">By Type:</option>
+            <option value="Adult" class="text-center">Adult</option>
+            <option value="Young Adult (YA)" class="text-center">Young Adult(YA)</option>
+            <option value="Children's Fiction" class="text-center">Children's Fiction</option>
           </select>
           </div>
           <div class="SortSection flex gap-x-2">
@@ -161,18 +164,15 @@
         </div>
         </section>
         <section>
-          <div class="books-container grid grid-cols-4 gap-5 justify-self-center grid-rows-4  w-[80%] max-lg:grid-cols-3 max-[500px]:grid-cols-2 mb-8">
+          <div class="books-container grid grid-cols-4 gap-5 justify-self-center max-grid-rows-6  w-[80%] max-lg:grid-cols-3 max-[500px]:grid-cols-2 mb-8">
             
             </div>
-            <div class="pagination justify-self-center my-16 ">
-              <a href="#" class="max-[400px]:mr-[5px] mr-[10px] text-xl font-bold"><i class="fa-solid fa-angles-left"></i></a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >1</a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >2</a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >3</a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >4</a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >5</a>
-              <a href="#" class="max-[400px]:px-[12] max-[400px]:py-[7px] px-[15px] py-[10px] bg-gray-300  md:hover:bg-[#4B6587]" >6</a>
-              <a href="#" class="max-[400px]:ml-[5px] ml-[10px] text-xl font-bold" ><i class="fa-solid fa-angles-left rotate-180"></i></a>
+              <div class="flex justify-self-center my-16">
+              <button id="previousPage" class="max-[400px]:mr-[5px] mr-[10px] text-xl font-bold"><i class="fa-solid fa-angles-left"></i></button>
+              <ul class="pagination list-none  flex gap-1">
+              
+              </ul>
+              <button id="nextPage" class="max-[400px]:ml-[5px] ml-[10px] text-xl font-bold" ><i class="fa-solid fa-angles-left rotate-180"></i></button>
             </div>
 
 
@@ -239,7 +239,6 @@
   </div>
 </footer>
       
-      <script src="../script/home.js"></script>
       <script src="../script/books.js"></script>
       <script src="../script/totop.js"></script>
     </body>
