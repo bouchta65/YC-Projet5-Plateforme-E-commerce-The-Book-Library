@@ -29,8 +29,6 @@ L’équipe de stagiaires a pour mission de concevoir un site e-commerce destin�
 - **Pagination** : Éviter la surcharge de contenu sur une seule page pour une meilleure lisibilité.
 - **Stockage Local** : Utilisation du `localStorage` pour persister les données du panier et des favoris.
 
-
-
 ## Technologies Utilisées
 
 - **Figma** : Conception UI/UX
