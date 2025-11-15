@@ -37,3 +37,4 @@ L’équipe de stagiaires a pour mission de concevoir un site e-commerce destin�
 - **Git/GitHub** : Gestion de version et collaboration
 - **LocalStorage** : Stockage des données côté client
 
+
